@@ -1,0 +1,14 @@
+@import '../../styles/globals.scss';
+
+
+.header{
+  padding: 20px;
+ .nav{
+    ul{
+        margin: 0;
+    }
+    @include responsive(768px){
+      display: none;
+    }
+ }
+}

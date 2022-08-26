@@ -1,0 +1,21 @@
+@import '../../styles/globals.scss';
+
+
+
+.filter{
+    
+    .form{
+        margin-top: 50px;
+        .select{
+            padding: 5px 25px;
+            outline: none;
+            background-color: #fff;
+            border: .5px solid #fff;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 4px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    
+}

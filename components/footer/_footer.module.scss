@@ -1,0 +1,36 @@
+@import '../../styles/globals.scss';
+
+
+.footer {
+    margin-top: 50px;
+
+    .logo {
+        @include responsive(992px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .middle {
+        padding: 20px;
+
+        .leftLink {
+            @include responsive(576px) {}
+
+            margin-top: 30px;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+
+    .bottom {
+        border-top: 0.2px solid rgb(106, 106, 106);
+        margin-top: 20px;
+        padding: 20px;
+    }
+}

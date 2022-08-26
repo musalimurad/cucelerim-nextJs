@@ -1,0 +1,78 @@
+@import '../../styles/globals.scss';
+
+
+.staticBar {
+    width: 60px;
+    height: 200px;
+    position: fixed;
+    right: 2px;
+    top: 0;
+    z-index: 10;
+    @include responsive(768px){
+        display: none;
+    }
+    .top {
+        background-color: $staticBarPlusBg;
+        width: 60px;
+
+        .plusIcon {
+            .plusIco {
+                margin-left: 10px;
+                font-size: 50px !important;
+                color: #fff;
+            }
+        }
+    }
+
+    .middle {
+        background-color: $middleBg;
+        height: 500px;
+
+        .uIco {
+            padding: 10px;
+            .wishList{
+                margin-top: 30px;
+                span{
+                    position: absolute;
+                    left: 30px;
+                    top: 75%;
+                    padding: 1px 6px;
+                    font-size: 12px;
+                    color: $staticBarPlusBg;
+                    border-radius: 100%;
+                    border: 0.5px solid $staticBarPlusBg;
+                }
+                a{
+                    position: relative;
+                }
+            }
+            .searchIco,
+            .userIco,
+            .wishIco {
+                display: block;
+                margin-top: 20px;
+                font-size: 20px;
+                margin-left: 10px;
+                color: $staticBarPlusBg;
+                transition: .5s ease;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .socialIcons{
+          margin-top: 200px;
+            .fb, .ig, .tg{
+                display: block;
+                color: $staticBarPlusBg;
+                font-size: 20px;
+                margin-left: 20px;
+                margin-top: 20px;
+                transition: .5s ease;
+                &:hover{
+                    transform: rotate(360deg) scale(1.2);
+                }
+            }
+        }
+    }
+}

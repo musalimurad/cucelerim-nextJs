@@ -1,0 +1,148 @@
+{
+    "header":[
+        {
+            "locale": "az",
+            "title": "Ana Səhifə",
+            "link": "/"
+        },
+        {
+            "locale": "en",
+            "title": "Home Page",
+            "link": "/"
+        },
+        {
+            "locale": "az",
+            "title": "Haqqımızda",
+            "link": "/AboutUs"
+        },
+        {
+            "locale": "en",
+            "title": "About us",
+            "link": "/AboutUs"
+        },
+        
+        {
+            "locale": "az",
+            "title":"Xəbərlər",
+            "link": "/News"
+        },
+        {
+            "locale": "en",
+            "title":"News",
+            "link": "/News"
+        },
+        {
+            "locale": "az",
+            "title": "Bloq",
+            "link": "/Blog"
+        },
+        {
+            "locale": "en",
+            "title": "Blog",
+            "link": "/Blog"
+        },
+        {
+            "locale":"az",
+            "title": "Təkliflər",
+            "link": "/Offer"
+        },
+        {
+            "locale":"en",
+            "title": "Offers",
+            "link": "/Offer"
+        },
+        {
+            "locale": "az",
+            "title": "Əlaqə",
+            "link": "/"
+        },
+        {
+            "locale":"en",
+            "title": "Contact",
+            "link": "/"
+        }
+    ],
+    "product":[
+        {
+            "locale": "az",
+            "id":1,
+            "productName":"Uşaq geyimi Kombinezon LC Waikiki",
+            "price": "30Azn",
+            "dateAndCity": "Bakı, 08-08-2021",
+            "sellStatus": "Mağaza",
+            "photoUrl": "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMask%20Group.22db4443.png&w=640&q=75",
+            "isVip":true
+        },
+        {
+            "locale": "en",
+            "id":1,
+            "productName":"Children's clothing Overalls LC Waikiki",
+            "price": "30Azn",
+            "dateAndCity": "Baku, 08-08-2021",
+            "sellStatus": "Store",
+            "photoUrl": "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMask%20Group.22db4443.png&w=640&q=75",
+            "isVip":true
+        },
+        {
+            "locale": "az",
+            "id":2,
+            "productName":"Uşaq geyimi-2 Kombinezon LC Waikiki",
+            "price": "40Azn",
+            "dateAndCity": "Bakı, 09-09-2021",
+            "sellStatus": "Mağaza",
+            "photoUrl": "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMask%20Group.22db4443.png&w=640&q=75",
+            "isVip":true
+        },
+        {
+            "locale": "en",
+            "id":2,
+            "productName":"Children's clothing-2 Overalls LC Waikiki",
+            "price": "40Azn",
+            "dateAndCity": "Baku, 09-09-2021",
+            "sellStatus": "Store",
+            "photoUrl": "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMask%20Group.22db4443.png&w=640&q=75",
+            "isVip":true
+        },
+       
+        {
+            "locale": "az",
+            "id":3,
+            "productName":"Uşaq geyimi-3 Kombinezon LC Waikiki",
+            "price": "50Azn",
+            "dateAndCity": "Bakı, 09-11-2021",
+            "sellStatus": "Mağaza",
+            "photoUrl": "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMask%20Group.22db4443.png&w=640&q=75",
+            "isVip":true
+        },
+        {
+            "locale": "en",
+            "id":3,
+            "productName":"Children's clothing-3 Overalls LC Waikiki",
+            "price": "50Azn",
+            "dateAndCity": "Baku, 09-11-2021",
+            "sellStatus": "Store",
+            "photoUrl": "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMask%20Group.22db4443.png&w=640&q=75",
+            "isVip":true
+        },
+        {
+            "locale": "az",
+            "id":4,
+            "productName":"Uşaq geyimi-4 Kombinezon LC Waikiki",
+            "price": "60Azn",
+            "dateAndCity": "Bakı, 09-12-2021",
+            "sellStatus": "Mağaza",
+            "photoUrl": "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMask%20Group.22db4443.png&w=640&q=75",
+            "isVip":true
+        },
+        {
+            "locale": "en",
+            "id":4,
+            "productName":"Children's clothing-4 Overalls LC Waikiki",
+            "price": "60Azn",
+            "dateAndCity": "Baku, 09-12-2021",
+            "sellStatus": "Store",
+            "photoUrl": "http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMask%20Group.22db4443.png&w=640&q=75",
+            "isVip":true
+        }
+    ]
+}

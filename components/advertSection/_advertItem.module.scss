@@ -1,0 +1,173 @@
+@import '../../styles/globals.scss';
+
+
+.advertItem {
+    margin-top: 60px;
+
+    .advertHead {
+        h2{
+            @include responsive(576px){
+                font-size: 17px;
+            }
+        }
+        .moreBtn {
+            a {
+                text-decoration: none;
+                padding: 6px 20px;
+                border-radius: 10px;
+                transition: .5s ease;
+
+                &:hover {
+                    border-radius: 0;
+                    border-bottom-left-radius: 12px;
+                    border-bottom-right-radius: 12px;
+                }
+                @include responsive(576px){
+                    padding: 4px 12px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.advertCard {
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+   border-radius: 16px !important;
+
+    // margin-left: 10px;
+    // height: 360px;
+    .cardImg {
+        overflow: hidden;
+        position: relative;
+        border-top-left-radius: 16px !important;
+        border-top-right-radius: 16px !important;
+
+        .img {
+            
+            transition: .5s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                border-radius: 16px !important;
+            }
+
+        }
+
+        .imgContent {
+            top: 0;
+            right: 15px;
+            z-index: 20;
+            width: 100%;
+
+            .top {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 100%;
+
+                .icon {
+                    .wishDiv {
+                        background-color: #fff;
+                        padding: 10px 12px;
+                        border-radius: 100%;
+                        transition: .5s ease;
+
+                        @include responsive(576px) {
+                            padding: 7px 8px;
+                            margin-left: -16px;
+                            margin-bottom: 7px;
+                        }
+
+                        &:hover {
+
+                            transform: rotate(360deg);
+                        }
+
+                        .wishIco {
+                            margin-top: 3px;
+                            color: $borderColor;
+                            font-size: 22px;
+
+                            @include responsive(576px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .imgText {
+                    margin-right: 20px;
+                    margin-top: 7px;
+
+                    @include responsive(576px) {
+                        margin-right: 6px;
+                    }
+
+                    p {
+                        padding: 3px 15px;
+                        color: $borderColor;
+                        background-color: #fff;
+                        font-weight: 600;
+                        border-radius: 8px;
+                        font-size: 15px;
+
+                        @include responsive(576px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+
+            .bottom {
+                position: absolute;
+                bottom: -10px;
+                right: 0px;
+
+                p {
+                    padding: 5px 15px;
+                    background-color: $borderColor;
+                    color: #fff;
+                    font-weight: 600;
+
+                    @include responsive(576px) {
+                        padding: 0px 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cardText {
+        padding: 15px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+
+            h4 {
+                font-size: 18px;
+
+                @include responsive(576px) {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .altText {
+            margin-top: 25px;
+
+            p {
+                color: rgb(175, 173, 173);
+                margin-top: 10px;
+
+                @include responsive(576px) {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

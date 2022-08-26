@@ -1,0 +1,41 @@
+@import './globals.scss';
+
+
+.categorySection{
+    margin-top: 100px;
+}
+
+.rightImg{
+    margin-left: 50px;
+    height: 300px;
+    @include responsive(1199px){
+        display: none;
+    }
+}
+
+.blog{
+    margin-top: 50px;
+    background: url("../assets/image/background-01\ 3.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.blogItem{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: $borderColor !important;
+    color: $borderColor !important;
+  }
+  .swiper-pagination-bullet{
+    background-color: $borderColor !important;
+    color: $borderColor !important;
+  }
+
+  .swiper-pagination-clickable .swiper-pagination-bullet{
+    background-color: $borderColor !important;
+    color: $borderColor !important;
+  }

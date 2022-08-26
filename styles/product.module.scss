@@ -1,0 +1,30 @@
+@import './globals.scss';
+
+.myContainer{
+    width: 90%;
+    margin: auto;
+}
+.categoryListProduct{
+    position: sticky;
+    top: 180px;
+    @include responsive(1199px){
+        display: none;
+    }
+}
+.productMain{
+    position: relative;
+   
+    .productContent{
+        // margin-left: 120px;
+        .headTitle{
+            .filterBtn{
+                border: none;
+                outline: none;
+                padding: 12px 20px;
+                background: #FAFAFA;
+                font-weight: 600;
+                border-radius: 8px;
+            }
+        }
+    }
+}

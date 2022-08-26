@@ -1,0 +1,29 @@
+@import '../../styles/globals.scss';
+
+.li {
+    margin-right: 15px;
+    list-style: none;
+    position: relative;
+
+    a {
+        text-decoration: none;
+        color: $defaultTextColor;
+    }
+
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 3px;
+        background-color: $staticBarPlusBg;
+        top: 100%;
+        left: 0;
+        transition: .5s ease;
+    }
+}
