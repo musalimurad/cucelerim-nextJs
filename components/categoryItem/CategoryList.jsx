@@ -1,8 +1,8 @@
 import styles from "./_categoryList.module.scss";
 import Link from "next/link";
 import * as Icon from "react-bootstrap-icons";
-import downArrow from '../../assets/image/eva_arrow.png'
-import rightArrow from '../../assets/image/eva_arrow-right.png'
+import downArrow from '../../public/assets/image/eva_arrow.png'
+import rightArrow from '../../public/assets/image/eva_arrow-right.png'
 import { useState } from "react";
 import Image from "next/image";
 const CategoryList = (props) => {

@@ -1,8 +1,8 @@
 import AdvertCard from "../advertSection/AdvertCard";
 import styles from "./_wishCart.module.scss";
-import cardImg from "../../assets/image/Mask Group.png";
-import diamond from "../../assets/image/diamond 1.png";
-import crystal from "../../assets/image/jam_crown-f.png";
+import cardImg from "../../public/assets/image/Mask Group.png";
+import diamond from "../../public/assets/image/diamond 1.png";
+import crystal from "../../public/assets/image/jam_crown-f.png";
 import * as Icon from "react-bootstrap-icons";
 import {connect} from 'react-redux'
 import { useRouter } from "next/router";
