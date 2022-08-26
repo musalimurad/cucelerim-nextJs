@@ -2,8 +2,8 @@ import Head from "next/head";
 import styles from "../styles/searchResult.module.scss";
 import Filter from "../components/filter/Filter";
 import AdvertCard from "../components/advertSection/AdvertCard";
-import cardImg from "../public/assets/image/Mask Group.png";
-import diamond from "../public/assets/image/diamond 1.png";
+import cardImg from "../public/assets/image/MaskGroup.png";
+import diamond from "../public/assets/image/diamond1.png";
 import crystal from "../public/assets/image/jam_crown-f.png";
 
 const SearchResult = () => {
