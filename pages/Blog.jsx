@@ -1,6 +1,6 @@
 import Head from "next/head";
 import BlogItemDetail from "../components/blog&news/BlogItemDetail";
-import cardImg from "../assets/image/Mask Group.png";
+import cardImg from "../public/assets/image/Mask Group.png";
 
 const Blog = () => {
   return (
