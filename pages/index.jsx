@@ -2,11 +2,11 @@ import Head from "next/head";
 import CategoryItem from "../components/categoryItem/CategoryItem";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
-import chick from "../assets/image/cuce image 2 1.png";
+import chick from "../public/assets/image/cuce image 2 1.png";
 import ScrollBottom from "../components/scrollBottom/ScrollBottom";
 import AdvertItem from "../components/advertSection/AdvertItem";
 import BlogItemDetail from "../components/blog&news/BlogItemDetail";
-import cardImg from "../assets/image/Mask Group.png";
+import cardImg from "../public/assets/image/Mask Group.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,8 +14,8 @@ import { Pagination, Autoplay } from "swiper";
 import BlogItemHead from "../components/blog&news/BlogItemHead";
 import { useRouter } from "next/router";
 import AdvertCard from "../components/advertSection/AdvertCard";
-import diamond from "../assets/image/diamond 1.png";
-import crystal from "../assets/image/jam_crown-f.png";
+import diamond from "../public/assets/image/diamond 1.png";
+import crystal from "../public/assets/image/jam_crown-f.png";
 import {connect} from 'react-redux'
 
 

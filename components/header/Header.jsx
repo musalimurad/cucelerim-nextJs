@@ -1,6 +1,6 @@
 import styles from "./_header.module.scss";
 import Image from "next/image";
-import Logo from "../../assets/image/logo.png";
+import Logo from "../../public/assets/image/logo.png";
 import NavLi from "./NavLi";
 import Link from 'next/link'
 import { useRouter } from "next/router";
