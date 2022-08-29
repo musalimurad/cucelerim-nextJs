@@ -7,7 +7,6 @@ import { useState } from "react";
 import Image from "next/image";
 const CategoryList = (props) => {
   const [isActive, setActive] = useState(false)
-  // const [isActive, setActive] = useState(false)
 
   return (
     <div className={styles.categoryList}>

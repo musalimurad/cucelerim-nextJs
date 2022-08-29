@@ -1,1 +1,153 @@
 @import './globals.scss';
+
+
+.productDetail {
+    .headText {
+        margin-bottom: 50px;
+
+        ul {
+            li {
+                margin-right: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: $staticLinkColor;
+                    font-size: 15px;
+                    @include responsive(375px){
+                        font-size: 12px;
+                    }
+                    &.activePage {
+                        color: #000;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .leftTop {
+        margin-left: 30px;
+
+        @include responsive(576px) {
+            margin-left: 0 !important;
+        }
+
+        .sliderDetail {
+            .detailSliderImg {
+                height: 350px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .detailSliderImgBottom {
+                height: 85px;
+                width: 100%;
+            }
+
+        }
+        .advertPersonAbout{
+            @include responsive (768px){
+                display: none;
+            }
+        }
+    }
+
+    .rightTop {
+        .headText {
+            @include responsive (992px) {
+                margin-top: 20px;
+            }
+
+            .productName {
+                h1 {
+                    font-size: 28px;
+
+                    
+                    @include responsive (576px) {
+                        font-size: 22px;
+                    }
+                    @include responsive (375px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .share {
+                margin-top: 7px;
+                @include responsive(375px){
+                    margin-top: 0;
+                }
+                .shareIco {
+                    padding-right: 3px !important;
+                }
+            }
+        }
+
+        .pricing {
+            .pricingLeft {
+                .discountPrice {
+                    p {
+                        padding: 10px 20px;
+                        background-color: $scrollColor;
+                        width: 100px;
+                        text-align: center;
+                        border-radius: 8px;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                }
+
+                .oldPrice {
+                    del {
+                        color: #C4C4C4;
+                    }
+                }
+            }
+
+            .discountDegree {
+                margin-top: 7px;
+
+                p {
+                    color: $staticBarPlusBg;
+                }
+            }
+
+        }
+
+        .advertDescription{
+            .descList{
+                li{
+                    color: $staticLinkColor;
+                }
+            }
+        }
+        .advertTabMenu{
+            margin-top: 30px;
+            .tabColor{
+                text-transform: capitalize;
+                background-color: $scrollColor;
+                margin-right: 20px;
+            }
+            .advertAboutText{
+                text-rendering: optimizeSpeed;
+                word-wrap: break-word;
+            }
+            .advertCategory{
+                padding: 0;
+                li{
+                    span{
+                        margin-left: 10px;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .advertPersonAboutResponsive{
+        display: none;
+        @include responsive(768px){
+            display: block;
+        }
+    }
+}

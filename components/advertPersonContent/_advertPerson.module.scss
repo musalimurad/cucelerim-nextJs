@@ -1,0 +1,49 @@
+@import '../../styles/globals.scss';
+
+
+.advertPerson{
+    padding: 15px 15px;
+    border: 1px solid $staticLinkColor;
+    margin-top: 30px;
+    border-radius: 8px;
+    .adv{
+        display: flex;
+        @include responsive(768px){
+            display: block;
+        }
+    }
+    @include responsive(576px){
+        padding: 10px 10px;
+    }
+
+    a{
+        color: $staticBarPlusBg;
+        font-size: 14px;
+        @include responsive(375px){
+            font-size: 13px;
+        }
+    }
+    .personContact{
+        margin-left: 100px;
+        @include responsive(768px){
+            margin-top: 10px;
+        }
+        @include responsive(768px){
+            margin-left: 0;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: #000;
+            @include responsive(1100px){
+                font-size: 15px !important;
+            }
+            font-size: 12px;
+            @include responsive(375px){
+                font-size: 14px;
+            }
+           
+        }
+       
+    }
+}

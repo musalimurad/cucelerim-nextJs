@@ -21,10 +21,13 @@ const AdvertCard = ({
   isOffer,
   discount,
   key,
-  id
+  id,
 }) => {
   return (
-    <div key={key} className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3 ">
+    <div
+      key={key}
+      className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3 "
+    >
       <div className={styles.advertCard}>
         <div className={styles.cardImg}>
           <Image
@@ -43,9 +46,7 @@ const AdvertCard = ({
                       {isAddWish === false ? (
                         <Icon.Heart
                           onClick={() => {
-                            addToCart(id)
-                            
-                            
+                            addToCart(id);
                           }}
                           className={styles.wishIco}
                         />
@@ -124,6 +125,5 @@ const mapDispatchToProps = (dispatch) => {
     removeFromCart: (id) => dispatch(removeFromCart(id)),
   };
 };
-
 
 export default connect(null, mapDispatchToProps)(AdvertCard);

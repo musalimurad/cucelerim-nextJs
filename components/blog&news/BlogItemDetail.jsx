@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const BlogItemDetail = ({ img, title, view, desc, time }) => {
   return (
-    <div>
+    <div className={styles.BlogItemDetail}>
   
       <div className={styles.sliderImg}>
         <Image
@@ -20,7 +20,7 @@ const BlogItemDetail = ({ img, title, view, desc, time }) => {
       <div className={styles.sliderText}>
         <div className="d-flex justify-content-between align-items-center">
           <h6>{title}</h6>
-          <p className={styles.watch}>
+          <p className={`${styles.watch} d-flex align-items-center`}>
             <Icon.Eye className={styles.eye} /> {view}
           </p>
         </div>
@@ -33,9 +33,9 @@ const BlogItemDetail = ({ img, title, view, desc, time }) => {
               <p>{time}</p>
             </div>
             <div className="right">
-              <Link href="/">
-                <a>
-                  Ətraflı <Icon.ArrowRight />
+              <Link  href="/">
+                <a className="d-flex align-items-center">
+                  Ətraflı <Icon.ArrowRight className={styles.rightArrow} />
                 </a>
               </Link>
             </div>

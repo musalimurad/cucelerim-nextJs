@@ -5,5 +5,13 @@ module.exports = {
     //  default locale used when the non-locale paths are visited
     defaultLocale: "az" ,
     localeDetection: false
-  }
+  },
+  plugins: [
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `codewithmurad`
+      }
+    },
+  ]
 };

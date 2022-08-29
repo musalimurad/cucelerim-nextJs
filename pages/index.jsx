@@ -200,13 +200,24 @@ export  function Home({products}) {
             <div className={styles.blogItem}>
               <Swiper
                 loop={true}
-                slidesPerView={4}
-                slidesPerGroup={2}
+                slidesPerView={"auto"}
+                slidesPerGroup={1}
                 spaceBetween={30}
-                width={1200}
-                pagination={{
-                  clickable: true,
-                }}
+               breakpoints={{
+                 280:{
+                   slidesPerView:1,
+                  
+                 },
+                
+                 576:{
+                   slidesPerView:2,
+                  
+                 },
+                 1024:{
+                  slidesPerView:3
+                 }
+               }}
+               
                 autoplay={{
                   delay: 3000,
                 }}
@@ -264,17 +275,24 @@ export  function Home({products}) {
             <BlogItemHead title="Bloq" link="/Blog" color="#63A7C6" />
             <div className={styles.blogItem}>
               <Swiper
-                loop={true}
-                slidesPerView={4}
-                slidesPerGroup={2}
-                spaceBetween={30}
-                width={1200}
-                pagination={{
-                  clickable: true,
-                }}
-                autoplay={{
-                  delay: 3000,
-                }}
+              loop={true}
+              slidesPerView={"auto"}
+              slidesPerGroup={1}
+              spaceBetween={30}
+             breakpoints={{
+               280:{
+                 slidesPerView:1,
+                
+               },
+              
+               550:{
+                 slidesPerView:2,
+                
+               },
+               1024:{
+                slidesPerView:3
+               }
+             }}
              
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
