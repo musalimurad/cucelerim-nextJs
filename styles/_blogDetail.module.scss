@@ -1,0 +1,46 @@
+@import './globals.scss';
+
+.blogDetail{
+    margin-top: 30px;
+    .blogDetailView{
+        margin-top: 10px;
+        figcaption{
+            color: $staticLinkColor;
+        }
+    }
+    .blogTextDetail{
+        margin-top: 30px;
+        
+        h1{
+            margin-bottom: 20px;
+        }
+        p{
+            word-break: break-all;
+        }
+    }
+    .otherBlog{
+        .otherBlogHead{
+            h3{
+                color: $scrollColor;
+            }
+        }
+        .otherBlogContent{
+            margin-top: 30px;
+            border-radius: 12px;
+            background-color: #fff;
+            padding: 10px 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        }
+        
+        .otherBlogContentText{
+            h5{
+                margin-left: 30px;
+            }
+        }
+        .otherBlogContentDate{
+            margin-left: 30px;
+        }
+       
+    }
+}
+

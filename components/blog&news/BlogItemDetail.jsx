@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PropTypes from "prop-types";
 
-const BlogItemDetail = ({ img, title, view, desc, time }) => {
+const BlogItemDetail = ({ img, title, view, desc, time, href }) => {
   return (
     <div className={styles.BlogItemDetail}>
   
@@ -13,6 +13,7 @@ const BlogItemDetail = ({ img, title, view, desc, time }) => {
           className={styles.img}
           height={350}
           width="500"
+          layout="responsive"
           objectFit="cover"
           src={img}
         />
@@ -33,7 +34,7 @@ const BlogItemDetail = ({ img, title, view, desc, time }) => {
               <p>{time}</p>
             </div>
             <div className="right">
-              <Link  href="/">
+              <Link  href={href}>
                 <a className="d-flex align-items-center">
                   Ətraflı <Icon.ArrowRight className={styles.rightArrow} />
                 </a>
@@ -51,6 +52,7 @@ BlogItemDetail.propTypes = {
   img: PropTypes.object.isRequired,
   view: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired
 };
 
 export default BlogItemDetail;

@@ -36,6 +36,7 @@ const AdvertCard = ({
             objectFit={"cover"}
             src={photoUrl}
             className={styles.img}
+            layout="responsive"
           />
           <div className={styles.imgContent}>
             <div className={styles.top}>

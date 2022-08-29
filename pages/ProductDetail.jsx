@@ -31,6 +31,9 @@ import AdvertItem from "../components/advertSection/AdvertItem";
 import { useRouter } from "next/router";
 import cardImg from "../public/assets/image/MaskGroup.png";
 
+import imgThree from '../public/assets/image/proDetail3.jpg'
+
+
 
 const ProductDetail = ({products}) => {
   const { locale } = useRouter();

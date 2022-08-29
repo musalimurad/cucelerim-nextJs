@@ -17,7 +17,8 @@ import AdvertCard from "../components/advertSection/AdvertCard";
 import diamond from "../public/assets/image/diamond1.png";
 import crystal from "../public/assets/image/jam_crown-f.png";
 import {connect} from 'react-redux'
-
+import imgOne from '../public/assets/image/proDetail1.jpg'
+import imgTwo from '../public/assets/image/proDetail2.jpg'
 
 export  function Home({products}) {
   const { locale } = useRouter();
@@ -120,7 +121,7 @@ export  function Home({products}) {
                  
                   id={fakeApi.id}
                    key={i}
-                    photoUrl={cardImg}
+                    photoUrl={"https://www.dekorstore.net/wp-content/uploads/2019/06/dogtas-cocuk-odasi-takimi-modelleri-1200x800.jpg"}
                     title={fakeApi.productName}
                     price={fakeApi.price}
                     ticket={fakeApi.sellStatus}
@@ -148,7 +149,7 @@ export  function Home({products}) {
                  
                    key={i}
                    id={fakeApi.id}
-                    photoUrl={cardImg}
+                    photoUrl={imgOne}
                     title={fakeApi.productName}
                     price={fakeApi.price}
                     ticket={fakeApi.sellStatus}
@@ -176,7 +177,7 @@ export  function Home({products}) {
                   id={fakeApi.id}
                  
                    key={i}
-                    photoUrl={cardImg}
+                    photoUrl={imgTwo}
                     title={fakeApi.productName}
                     price={fakeApi.price}
                     ticket={fakeApi.sellStatus}
@@ -232,6 +233,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -241,6 +243,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -250,6 +253,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -259,6 +263,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -268,6 +273,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
               </Swiper>
@@ -304,6 +310,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -313,6 +320,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -322,6 +330,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -331,6 +340,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -340,6 +350,7 @@ export  function Home({products}) {
                     title="Uşaqlar üçün oyuncaq dəsti"
                     view="20"
                     time="Bakı, 08-08-2021"
+                    href="/BlogDetail"
                   />
                 </SwiperSlide>
               </Swiper>

@@ -6,6 +6,9 @@ module.exports = {
     defaultLocale: "az" ,
     localeDetection: false
   },
+  images: {
+    domains: ['www.dekorstore.net'],
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-disqus`,
