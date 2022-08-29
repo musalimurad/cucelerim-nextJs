@@ -14,7 +14,7 @@ const AdvertPerson = () => {
           </div>
           <div className={styles.personContact}>
           <a className='d-flex align-items-center' href='tel:(+994)555555555'><Image className={styles.contactImg} src={tel}/> (+994 55) 555-55-55</a>
-          <a className='d-flex align-items-center' target='_blank'  href="https://api.whatsapp.com/send?phone=0554055596"><Image className={styles.contactImg} src={wp}/>  (+994 55) 555-55-55</a>
+          <a className='d-flex align-items-center'   href="https://api.whatsapp.com/send?phone=0554055596"><Image className={styles.contactImg} src={wp}/>  (+994 55) 555-55-55</a>
          </div>
          </div>
         </div>
