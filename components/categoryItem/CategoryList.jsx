@@ -7,6 +7,8 @@ import { useState } from "react";
 import Image from "next/image";
 const CategoryList = (props) => {
   const [isActive, setActive] = useState(false)
+  const [isActiveTwo, setActiveTwo] = useState(false)
+
 
   return (
     <div className={styles.categoryList}>
@@ -33,8 +35,8 @@ const CategoryList = (props) => {
               </ul>
             </li>
             <li>
-            <a onClick={()=> isActive? setActive(false) : setActive(true)} className={isActive? `${styles.active} d-flex align-items-center justify-content-between` : "d-flex align-items-center justify-content-between"} >Mebel{isActive? <Image src={downArrow}/> : <Image src={rightArrow}/>} </a> 
-          <ul className={isActive? styles.activeMenu  : styles.altCategory}>
+            <a onClick={()=> isActiveTwo? setActiveTwo(false) : setActiveTwo(true)} className={isActiveTwo? `${styles.active} d-flex align-items-center justify-content-between` : "d-flex align-items-center justify-content-between"} >Mebel{isActiveTwo? <Image src={downArrow}/> : <Image src={rightArrow}/>} </a> 
+          <ul className={isActiveTwo? styles.activeMenu  : styles.altCategory}>
             <li className={styles.childLi}>
               <a className={styles.childLink}>Usaq Mebel</a>
             </li>
@@ -44,7 +46,7 @@ const CategoryList = (props) => {
           </ul>
         </li>
             <li>
-              <a>Mağazalar</a>
+             <Link href="/Shop"><a>Mağazalar</a></Link>
             </li>
             <li>
               <a>Sağlamlıq</a>
