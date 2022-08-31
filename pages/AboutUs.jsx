@@ -1,4 +1,5 @@
 import Head from "next/head";
+import SiteText from "../components/siteText/SiteText";
 
 const AboutUs = () => {
   return (
@@ -9,14 +10,17 @@ const AboutUs = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-       <section style={{height:"500px"}} className="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 alert alert-success my-5" role="alert">
-       <h3>Haqqımızda</h3>
-       <p>Tap.az layihəsi Azərbaycanda özəl elanlar üçün universal meydança təşkil etmək məqsədi ilə yaradılıb.
+        <SiteText
+          title="Haqqımızda"
+          description="Tap.az layihəsi Azərbaycanda özəl elanlar üçün universal meydança təşkil etmək məqsədi ilə yaradılıb.
 
-       Hər bir kəs saytdan istifadə etməklə geyim və mebeldən tutmuş elektronika və avtomobilədək hər şey ala və sata bilər.
-       
-       Tap.az-a əsasən ayrıca fərdlər elan yerləşdirir, lakin sayt şirkət və fərdi sahibkarlar üçün də maraq kəsb edir, buna görə Tap.az-da təkcə işlənmiş deyil, eləcə də yeni məhsullar əldə etmək olar.</p>
-       </section>
+      Hər bir kəs saytdan istifadə etməklə geyim və mebeldən tutmuş elektronika və avtomobilədək hər şey ala və sata bilər.
+      
+      Tap.az-a əsasən ayrıca fərdlər elan yerləşdirir, lakin sayt şirkət və fərdi sahibkarlar üçün də maraq kəsb edir, buna görə Tap.az-da təkcə işlənmiş deyil, eləcə də yeni məhsullar əldə etmək olar."
+          color="#F3FFF8"
+          height="500px"
+          borderColor="#80BC96"
+        />
       </main>
     </div>
   );

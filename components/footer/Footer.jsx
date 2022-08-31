@@ -33,13 +33,13 @@ const Footer = () => {
               <div className="d-flex flex-wrap justify-content-between">
                 <div className="col-12 col-sm-4 col-lg-4 col-xl-4 col-xxl-4">
                   <div className={styles.leftLink}>
-                    <Link href="/">
+                    <Link href="/UserAgreement">
                       <a>İstifadəçi razılaşması</a>
                     </Link>
                     <Link href="/">
                       <a>Brendlər</a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/SiteAds">
                       <a>Saytda reklam</a>
                     </Link>
                   </div>

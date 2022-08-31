@@ -1,0 +1,75 @@
+@import './globals.scss';
+
+
+.jobsDetail{
+    margin-top: 40px;
+    .detailContact{
+        .personImg{
+            border-radius: 8px;
+        }
+        .fullName{
+            margin-top: 10px;
+            h2{
+                @include responsive(320px){
+                    font-size: 20px;
+                }
+            }
+          
+            p{
+                font-weight: 600;
+                font-size: 22px;
+                @include responsive(320px){
+                    font-size: 17px;
+                }
+            }
+        }
+        .contactInfo{
+            ul{
+                padding-left: 0;
+                li{
+                    padding: 10px 0;
+                    span{
+                        margin-right: 10px;
+                        font-weight: 600;
+                    }
+                    @include responsive(320px){
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .onlineRegisterBtn{
+            button{
+                border-radius: 8px;
+                border: none;
+                padding: 10px 60px;
+                background-color: $registerColor;
+                color: #fff;
+                font-weight: 600;
+               
+            }
+        }
+    }
+    .jobsContent{
+        margin-bottom: 20px;
+        .headText{
+            padding: 20px 30px;
+            background-color: $jobsHeadColor;
+            border-radius: 8px;
+            color: #fff;
+        }
+        .jobsText{
+            margin-top: 10px;
+            ul{
+                list-style: disc;
+               li{
+                &::marker{
+                    color: $jobsHeadColor;
+                }
+                padding-bottom: 10px;
+                word-break: break-all;
+               }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import './globals.scss';
+
+
+.jobSeeker{
+    .headText {
+        margin-bottom: 50px;
+
+        ul {
+            li {
+                margin-right: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: $staticLinkColor;
+                    font-size: 15px;
+                    @include responsive(375px){
+                        font-size: 12px;
+                    }
+                    &.activePage {
+                        color: #000;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+}

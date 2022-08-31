@@ -30,7 +30,7 @@ const BlogDetail = () => {
                     >
                       <figcaption>08-08-2021 09:15</figcaption>
                       <figcaption className="d-flex align-items-center">
-                        {" "}
+                      
                         <Icon.Eye className={styles.eye} /> 20
                       </figcaption>
                     </div>
