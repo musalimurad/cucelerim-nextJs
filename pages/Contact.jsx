@@ -55,6 +55,11 @@ const Contact = () => {
                      <textarea rows="10" cols="20" placeholder="Mesajınız"></textarea>
                     </div>
                   </div>
+                  <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                  <div className={styles.fullNameInpS}>
+                  <input className={styles.submitIco} type="submit" value="Göndər" />
+                  </div>
+                </div>
                     </div>
                   </form>
                 </div>
