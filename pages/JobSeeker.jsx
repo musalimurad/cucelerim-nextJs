@@ -4,6 +4,8 @@ import styles from "../styles/_jobSeeker.module.scss";
 import doctorImg from "../public/assets/image/doctor.jpg";
 import OutlineButton from "../components/button/Button";
 import Link from "next/link";
+import shareIco from "../public/assets/image/share.png";
+import wishIco from "../public/assets/image/heart.png";
 
 const JobSeeker = () => {
   return (
@@ -41,6 +43,8 @@ const JobSeeker = () => {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className="container">
             <div className={styles.jobSeekerDetail}>
               <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <div className={styles.topDetail}>
@@ -49,15 +53,114 @@ const JobSeeker = () => {
                     <h5>Aygün Kərimova</h5>
                   </div>
                   <div className={styles.info}>
-                   <div className="row align-items-center">
-                    
-                   </div>
+                    <div className="row align-items-center">
+                      <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div className={styles.text}>
+                          <ul>
+                            <li>
+                              Yaş: <span> 30</span>
+                            </li>
+                            <li>
+                              Təhsil: <span> Ali</span>
+                            </li>
+                            <li>
+                              Şəhər: <span> Bakı</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div className={styles.text}>
+                          <ul>
+                            <li>
+                              Telefon: <span> (+994 50) 555 55 55</span>
+                            </li>
+                            <li>
+                              E-mail: <span> aygunkerimova@gmail.com</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className={styles.bottomDetail}>
-                  
+                  <div className="row align-items-center">
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                      <div className={styles.infoDesc}>
+                        <h5>Bacarıqlar</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vitae, vitae at ullamcorper at erat sed fames.
+                          Sed viverra leo, nisi feugiat nec placerat in quis
+                          dui. Est nisl, purus amet risus potenti.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                      <div className={styles.infoDesc}>
+                        <h5>İş təcrübəsi</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vitae, vitae at ullamcorper at erat sed fames.
+                          Sed viverra leo, nisi feugiat nec placerat in quis
+                          dui. Est nisl, purus amet risus potenti.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                      <div className={styles.infoDesc}>
+                        <h5>Təhsil</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vitae, vitae at ullamcorper at erat sed fames.
+                          Sed viverra leo, nisi feugiat nec placerat in quis
+                          dui. Est nisl, purus amet risus potenti.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                      <div className={styles.infoDesc}>
+                        <h5>Əlavə məlumat</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vitae, vitae at ullamcorper at erat sed fames.
+                          Sed viverra leo, nisi feugiat nec placerat in quis
+                          dui. Est nisl, purus amet risus potenti.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div className="row align-items-center justify-content-between">
+             <div className="col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
+             <div className={styles.promote}>
+             <div className="d-flex align-items-center">
+               <OutlineButton
+                 buttonContent="İrəli çək"
+                 buttonBorder="1px solid #A96263"
+               />
+               <OutlineButton
+                 buttonContent="VİP et"
+                 buttonBorder="1px solid #80BC96"
+               />
+               <OutlineButton
+                 buttonContent="Premium et"
+                 buttonBorder="1px solid #FF8B6A"
+               />
+             </div>
+           </div>
+             </div>
+             <div className="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+              <div className={styles.share}>
+              <div className="d-flex align-items-center">
+              <Image className={styles.shareIco} src={shareIco} />
+              <Image className={styles.wishIco} src={wishIco} />
+            </div>
+              </div>
+             </div>
             </div>
           </div>
         </section>

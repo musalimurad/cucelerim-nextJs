@@ -1,0 +1,56 @@
+@import './globals.scss';
+
+.contactPage{
+    .contactPageInfo{
+        padding: 20px 10px;
+        border: 2px solid #6871B6;
+        border-radius: 8px;
+        background-color: #F5F9FF;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        @include responsive(992px){
+        margin-left: 0px;
+
+        }
+        .contactHead{
+            margin-bottom: 20px;
+        }
+        .contactDetail{
+            p{
+                font-weight: 600;
+            }
+        }
+    }
+    .contactForm{
+        padding: 20px 40px;
+        border: 2px solid #CFB54A;
+        background-color: #FFFCEE;
+        border-radius: 8px;
+        .headText{
+            margin-bottom: 20px;
+        }
+        .fullNameInp{
+            border: 1px solid #D4D4D4;
+            border-radius: 8px;
+            padding: 20px 10px;
+            margin-bottom: 20px;
+            background: #fff;
+            input{
+                border: none;
+                outline: none;
+                width: 100%;
+                background: transparent;
+            }
+            textarea{
+                width: 100%;
+                border: none;
+                outline: none;
+                background: transparent;
+
+            }
+        }
+        form{
+            
+        }
+    }
+}

@@ -1,7 +1,8 @@
 @import './globals.scss';
 
 
-.jobSeeker{
+.jobSeeker {
+
     .headText {
         margin-bottom: 50px;
 
@@ -13,9 +14,11 @@
                     text-decoration: none;
                     color: $staticLinkColor;
                     font-size: 15px;
-                    @include responsive(375px){
+
+                    @include responsive(375px) {
                         font-size: 12px;
                     }
+
                     &.activePage {
                         color: #000;
                         font-weight: 600;
@@ -24,5 +27,51 @@
             }
         }
     }
+
+    .jobSeekerDetail {
+        border: 2px solid #CFB54A;
+        border-radius: 8px;
+
+        .topDetail {
+            background-color: #FFFCEE;
+            border-radius: 8px;
+            padding: 20px;
+
+            .info {
+                .text {
+                    margin-top: 40px;
+
+                    ul {
+                        padding: 0;
+
+                        li {
+                            padding: 5px 0;
+                            font-weight: 600;
+
+                            span {
+                                font-weight: 400;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottomDetail{
+            padding: 20px;
+            .infoDesc{
+                h5{
+                    color: $scrollColor;
+                }
+                p{
+                    word-break: break-all;
+                }
+            }
+        }
+       
+    }
+    .share{
+    }
+
 
 }
