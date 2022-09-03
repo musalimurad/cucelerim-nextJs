@@ -1,0 +1,40 @@
+@import '../../styles/globals.scss';
+
+
+.accountParameter{
+    margin-left: 50px;
+    @include responsive(992px){
+        margin-left: 0px;
+    }
+    
+    form{
+        margin-top: 30px;
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        input{
+            display: block;
+            border: .5px solid #D4D4D4;
+            margin-bottom: 20px;
+            width: 70%;
+            outline: none;
+            padding: 10px 10px;
+            color: #979797;
+            border-radius: 8px;
+            @include responsive(768px){
+                width: 100%;
+            }
+            &.submitBtn{
+                background-color: #ECA521;
+                border: none;
+                color: #fff;
+                font-weight: 600;
+                width: 40%;
+                @include responsive(768px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

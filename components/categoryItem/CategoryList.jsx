@@ -5,10 +5,22 @@ import downArrow from '../../public/assets/image/eva_arrow.png'
 import rightArrow from '../../public/assets/image/eva_arrow-right.png'
 import { useState } from "react";
 import Image from "next/image";
-const CategoryList = (props) => {
+import { useEffect } from "react";
+const CategoryList = () => {
   const [isActive, setActive] = useState(false)
-  const [isActiveTwo, setActiveTwo] = useState(false)
-
+  useEffect(() => {
+    let liItems = document.querySelectorAll("._categoryList_catListItem__gDtyh ul li a")
+    let arrowIcons = document.querySelectorAll("._categoryList_arrow__wNLjD");
+    console.log(arrowIcons);
+     for (let i = 0; i < liItems.length; i++) {
+       liItems[i].onclick = () => {
+           setActive(true)
+           liItems[i].classList.toggle(`${styles.active}`)
+          liItems[i].nextElementSibling.classList.toggle(`${styles.activeMenu}`)
+       }
+      
+     }
+  });
 
   return (
     <div className={styles.categoryList}>
@@ -24,8 +36,8 @@ const CategoryList = (props) => {
               </Link>
             </li>
             <li>
-                <a onClick={()=> isActive? setActive(false) : setActive(true)} className={isActive? `${styles.active} d-flex align-items-center justify-content-between` : "d-flex align-items-center justify-content-between"} >Geyim{isActive? <Image src={downArrow}/> : <Image src={rightArrow}/>} </a> 
-              <ul className={isActive? styles.activeMenu  : styles.altCategory}>
+                <a  className={ `d-flex align-items-center justify-content-between`} >Geyim{ <Image className={styles.arrow} src={rightArrow}/>} </a> 
+              <ul className={styles.altCategory}>
                 <li className={styles.childLi}>
                   <a className={styles.childLink}>Kisi Geyim</a>
                 </li>
@@ -35,8 +47,8 @@ const CategoryList = (props) => {
               </ul>
             </li>
             <li>
-            <a onClick={()=> isActiveTwo? setActiveTwo(false) : setActiveTwo(true)} className={isActiveTwo? `${styles.active} d-flex align-items-center justify-content-between` : "d-flex align-items-center justify-content-between"} >Mebel{isActiveTwo? <Image src={downArrow}/> : <Image src={rightArrow}/>} </a> 
-          <ul className={isActiveTwo? styles.activeMenu  : styles.altCategory}>
+            <a  className={`d-flex align-items-center justify-content-between`} >Mebel{ <Image  className={styles.arrow} src={rightArrow}/>} </a> 
+          <ul className={styles.altCategory}>
             <li className={styles.childLi}>
               <a className={styles.childLink}>Usaq Mebel</a>
             </li>

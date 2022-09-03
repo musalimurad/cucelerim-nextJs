@@ -1,0 +1,81 @@
+@import '../../styles/globals.scss';
+
+.addHead {
+    margin-top: 30px;
+
+    a {
+        padding: 10px 120px;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+
+        @include responsive(768px) {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+        }
+
+        @include responsive(1400px) {
+            padding: 10px 20px;
+        }
+    }
+
+    .advertLink {
+        background-color: #ECA521;
+        color: #fff;
+    }
+
+    .cvLink {
+        border: 1px solid #ECA521;
+        color: #ECA521;
+    }
+}
+
+.cardEditBtn {
+    padding: 10px 43px;
+    color: #80BC96;
+    border: 1px solid #80BC96;
+    border-radius: 8px;
+    text-align: center;
+
+    &:hover {
+        color: #80BC96;
+    }
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+    @include responsive(576px) {
+        padding: 10px 27px;
+
+    }
+
+    @include responsive(280px) {
+        padding: 10px 17px;
+
+    }
+}
+
+.cardDeleteBtn {
+    padding: 10px 43px;
+    color: #DC7E69;
+    border: 1px solid #DC7E69;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    @include responsive(576px) {
+        padding: 10px 27px;
+
+    }
+
+    @include responsive(280px) {
+        padding: 10px 17px;
+
+    }
+
+    &:hover {
+        color: #DC7E69;
+    }
+}

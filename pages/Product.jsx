@@ -31,106 +31,178 @@ const Product = () => {
                   <h1>Oyuncaqlar</h1>
                 </div>
                 <div className="filterList">
-                <Filter/>
+                  <Filter />
                 </div>
                 <div className="productsItems">
                   <div className="row align-items-center">
-                    <AdvertCard
-                      photoUrl={cardImg}
-                      title="Uşaq geyimi Kombinezon LC Waikiki"
-                      price="30 Azn"
-                      ticket="Mağaza"
-                      iconOne={diamond}
-                      iconTwo={crystal}
-                      date="Bakı, 08-08-2021"
-                      href="/ProductDetail"
-                      isAddWish={false}
-                      isOffer={false}
-                    />
-                    <AdvertCard
-                      photoUrl={cardImg}
-                      title="Uşaq geyimi Kombinezon LC Waikiki"
-                      price="30 Azn"
-                      ticket="Mağaza"
-                      iconOne={diamond}
-                      iconTwo={crystal}
-                      date="Bakı, 08-08-2021"
-                      href="/ProductDetail"
-                      isAddWish={false}
-                      isOffer={false}
-                    />
-                    <AdvertCard
-                      photoUrl={cardImg}
-                      title="Uşaq geyimi Kombinezon LC Waikiki"
-                      price="30 Azn"
-                      ticket="Mağaza"
-                      iconOne={diamond}
-                      iconTwo={crystal}
-                      date="Bakı, 08-08-2021"
-                      href="/ProductDetail"
-                      isAddWish={false}
-                      isOffer={false}
-                    />
-                    <AdvertCard
-                      photoUrl={cardImg}
-                      title="Uşaq geyimi Kombinezon LC Waikiki"
-                      price="30 Azn"
-                      ticket="Mağaza"
-                      iconOne={diamond}
-                      iconTwo={crystal}
-                      date="Bakı, 08-08-2021"
-                      href="/ProductDetail"
-                      isAddWish={false}
-                      isOffer={false}
-                    />
-                    <AdvertCard
-                      photoUrl={cardImg}
-                      title="Uşaq geyimi Kombinezon LC Waikiki"
-                      price="30 Azn"
-                      ticket="Mağaza"
-                      iconOne={diamond}
-                      iconTwo={crystal}
-                      date="Bakı, 08-08-2021"
-                      href="/ProductDetail"
-                      isAddWish={false}
-                      isOffer={false}
-                    />
-                    <AdvertCard
-                      photoUrl={cardImg}
-                      title="Uşaq geyimi Kombinezon LC Waikiki"
-                      price="30 Azn"
-                      ticket="Mağaza"
-                      iconOne={diamond}
-                      iconTwo={crystal}
-                      date="Bakı, 08-08-2021"
-                      href="/ProductDetail"
-                      isAddWish={false}
-                      isOffer={false}
-                    />
-                    <AdvertCard
-                      photoUrl={cardImg}
-                      title="Uşaq geyimi Kombinezon LC Waikiki"
-                      price="30 Azn"
-                      ticket="Mağaza"
-                      iconOne={diamond}
-                      iconTwo={crystal}
-                      date="Bakı, 08-08-2021"
-                      href="/ProductDetail"
-                      isAddWish={false}
-                      isOffer={false}
-                    />
-                    <AdvertCard
-                      photoUrl={cardImg}
-                      title="Uşaq geyimi Kombinezon LC Waikiki"
-                      price="30 Azn"
-                      ticket="Mağaza"
-                      iconOne={diamond}
-                      iconTwo={crystal}
-                      date="Bakı, 08-08-2021"
-                      href="/ProductDetail"
-                      isAddWish={false}
-                      isOffer={false}
-                    />
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        photoUrl={cardImg}
+                        title="Uşaq geyimi Kombinezon LC Waikiki"
+                        price="30 Azn"
+                        ticket="Mağaza"
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date="Bakı, 08-08-2021"
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

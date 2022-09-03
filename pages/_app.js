@@ -6,22 +6,21 @@ import StaticBar from '../components/staticBar/StaticBar';
 import Footer from '../components/footer/Footer';
 import { Provider } from 'react-redux';
 import store from '../redux/store/store'
+import { SessionProvider } from "next-auth/react"
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps:{session, ...pageProps} }) {
   return(
     <div>
+    <SessionProvider session={pageProps.session}>
     <Provider store={store}>
     <Header />
     <StaticBar />
-    
     <Component {...pageProps} />
+    <Footer/>
     </Provider>
-  
-  <Footer/>
-  
-   
+    </SessionProvider>
     </div>
   ) 
 }
 
-export default MyApp
+export default App

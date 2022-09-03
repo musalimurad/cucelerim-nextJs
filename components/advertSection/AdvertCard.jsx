@@ -22,13 +22,11 @@ const AdvertCard = ({
   discount,
   key,
   id,
+  
 }) => {
   return (
-    <div
-      key={key}
-      className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3 "
-    >
-      <div className={styles.advertCard}>
+ 
+      <div key={key} className={styles.advertCard}>
         <div className={styles.cardImg}>
           <Image
             width={840}
@@ -37,6 +35,8 @@ const AdvertCard = ({
             src={photoUrl}
             className={styles.img}
             layout="responsive"
+            fetchpriority="high"
+            
           />
           <div className={styles.imgContent}>
             <div className={styles.top}>
@@ -102,7 +102,7 @@ const AdvertCard = ({
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 

@@ -40,7 +40,7 @@ const StaticBar = ({ cart }) => {
         <div className={styles.middle}>
           <div className={styles.uIco}>
             <Icon.Search className={styles.searchIco} />
-            <Link href="/">
+            <Link href="/myAccount">
               <a>
                 <Icon.Person className={styles.userIco} />
               </a>

@@ -54,12 +54,12 @@
         {
             "locale": "az",
             "title": "Əlaqə",
-            "link": "/"
+            "link": "/Contact"
         },
         {
             "locale":"en",
             "title": "Contact",
-            "link": "/"
+            "link": "/Contact"
         }
     ],
     "product":[

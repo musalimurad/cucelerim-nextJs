@@ -1,0 +1,74 @@
+@import './globals.scss';
+
+
+.loginPage{
+    .loginHeadText{
+        display: flex;
+        justify-content: center;
+    }
+    .differentAccount{
+        
+        margin-top: 50px;
+        button{
+            padding: 10px 40px;
+            width: 100%;
+            border: 1px solid $staticLinkColor;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            .googleIco{
+                color: red;
+            }
+            .fbIco{
+                color: blue;
+            }
+            span{
+                margin-left: 20px;
+                font-weight: 600;
+            }
+            .fbText{
+                color: blue;
+            }
+        }
+    }
+    form{
+        margin-top: 50px;
+        .loginInp{
+            border: 1px solid #D4D4D4;
+            border-radius: 8px;
+            padding: 20px 10px;
+           
+    
+            margin-bottom: 20px;
+            background: #fff;
+            input{
+                border: none;
+                outline: none;
+                width: 100%;
+                background: transparent;
+            }
+         
+           
+        }
+        .submitIco{
+            padding: 15px 30px;
+            width: 100%;
+            background-color: $scrollColor;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+        .forgotPass{
+            display: flex;
+            justify-content: center;
+            color: $staticLinkColor;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    }
+    .isRegister{
+        a{
+            color: $scrollColor;
+        }
+    }
+    
+}

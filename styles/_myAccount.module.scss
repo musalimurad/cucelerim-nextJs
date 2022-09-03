@@ -1,0 +1,14 @@
+@import './globals.scss';
+
+
+.myAccountPage{
+    position: relative;
+    .settingItem{
+        backdrop-filter: inherit;
+       
+        &:first-child{
+            display: block !important;
+        }
+    }
+}
+

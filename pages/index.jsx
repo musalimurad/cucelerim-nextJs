@@ -16,11 +16,11 @@ import { useRouter } from "next/router";
 import AdvertCard from "../components/advertSection/AdvertCard";
 import diamond from "../public/assets/image/diamond1.png";
 import crystal from "../public/assets/image/jam_crown-f.png";
-import {connect} from 'react-redux'
-import imgOne from '../public/assets/image/proDetail1.jpg'
-import imgTwo from '../public/assets/image/proDetail2.jpg'
+import { connect } from "react-redux";
+import imgOne from "../public/assets/image/proDetail1.jpg";
+import imgTwo from "../public/assets/image/proDetail2.jpg";
 
-export  function Home({products}) {
+export function Home({ products }) {
   const { locale } = useRouter();
 
   return (
@@ -106,92 +106,88 @@ export  function Home({products}) {
         </section>
         <section className={styles.advertSection}>
           <div className="container">
-     
             <AdvertItem
               titleText="VİP elanlar"
               textColor="#5EB57E"
               buttonText="Daha çox"
-              cardItem={
-                
-                products
-              .filter((p) => p.locale === locale && p.isVip === true)
-              .map((fakeApi, i) => {
-                return (
-                  <AdvertCard
-                 
-                  id={fakeApi.id}
-                   key={i}
-                    photoUrl={"https://www.dekorstore.net/wp-content/uploads/2019/06/dogtas-cocuk-odasi-takimi-modelleri-1200x800.jpg"}
-                    title={fakeApi.productName}
-                    price={fakeApi.price}
-                    ticket={fakeApi.sellStatus}
-                    iconOne={diamond}
-                    iconTwo={crystal}
-                    date={fakeApi.dateAndCity}
-                    href="/ProductDetail"
-                    isAddWish = {false}
-                    isOffer = {false}
-                  />
-                );
-              })
-            }
+              cardItem={products
+                .filter((p) => p.locale === locale && p.isVip === true)
+                .map((fakeApi, i) => {
+                  return (
+                    <div key={i} className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        id={fakeApi.id}
+                        
+                        photoUrl={
+                          "https://www.dekorstore.net/wp-content/uploads/2019/06/dogtas-cocuk-odasi-takimi-modelleri-1200x800.jpg"
+                        }
+                        title={fakeApi.productName}
+                        price={fakeApi.price}
+                        ticket={fakeApi.sellStatus}
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date={fakeApi.dateAndCity}
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                  );
+                })}
             />
             <AdvertItem
               titleText="Premium elanlar"
               textColor="#C87C69"
               buttonText="Daha çox"
-              cardItem={
-               products
-              .filter((p) => p.locale === locale && p.isVip === true)
-              .map((fakeApi, i) => {
-                return (
-                  <AdvertCard
-                 
-                   key={i}
-                   id={fakeApi.id}
-                    photoUrl={imgOne}
-                    title={fakeApi.productName}
-                    price={fakeApi.price}
-                    ticket={fakeApi.sellStatus}
-                    iconOne={diamond}
-                    iconTwo={crystal}
-                    date={fakeApi.dateAndCity}
-                    href="/ProductDetail"
-                    isAddWish = {false}
-                    isOffer = {false}
-                  />
-                );
-              })
-            }
+              cardItem={products
+                .filter((p) => p.locale === locale && p.isVip === true)
+                .map((fakeApi, i) => {
+                  return (
+                    <div  key={i} className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                       
+                        id={fakeApi.id}
+                        photoUrl={imgOne}
+                        title={fakeApi.productName}
+                        price={fakeApi.price}
+                        ticket={fakeApi.sellStatus}
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date={fakeApi.dateAndCity}
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                  );
+                })}
             />
             <AdvertItem
               titleText="Son elanlar"
               textColor="#6871B6"
               buttonText="Daha çox"
-              cardItem={
-                products
-              .filter((p) => p.locale === locale && p.isVip === true)
-              .map((fakeApi, i) => {
-                return (
-                  <AdvertCard
-                  id={fakeApi.id}
-                 
-                   key={i}
-                    photoUrl={imgTwo}
-                    title={fakeApi.productName}
-                    price={fakeApi.price}
-                    ticket={fakeApi.sellStatus}
-                    iconOne={diamond}
-                    iconTwo={crystal}
-                    date={fakeApi.dateAndCity}
-                    href="/ProductDetail"
-                    isAddWish = {false}
-                    isOffer = {false}
-                   
-                  />
-                );
-              })
-            }
+              cardItem={products
+                .filter((p) => p.locale === locale && p.isVip === true)
+                .map((fakeApi, i) => {
+                  return (
+                    <div  key={i} className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                      <AdvertCard
+                        id={fakeApi.id}
+                       
+                        photoUrl={imgTwo}
+                        title={fakeApi.productName}
+                        price={fakeApi.price}
+                        ticket={fakeApi.sellStatus}
+                        iconOne={diamond}
+                        iconTwo={crystal}
+                        date={fakeApi.dateAndCity}
+                        href="/ProductDetail"
+                        isAddWish={false}
+                        isOffer={false}
+                      />
+                    </div>
+                  );
+                })}
             />
           </div>
         </section>
@@ -204,25 +200,21 @@ export  function Home({products}) {
                 slidesPerView={"auto"}
                 slidesPerGroup={1}
                 spaceBetween={30}
-               breakpoints={{
-                 280:{
-                   slidesPerView:1,
-                  
-                 },
-                
-                 576:{
-                   slidesPerView:2,
-                  
-                 },
-                 1024:{
-                  slidesPerView:3
-                 }
-               }}
-               
+                breakpoints={{
+                  280: {
+                    slidesPerView: 1,
+                  },
+
+                  576: {
+                    slidesPerView: 2,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                  },
+                }}
                 autoplay={{
                   delay: 3000,
                 }}
-              
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
               >
@@ -281,25 +273,22 @@ export  function Home({products}) {
             <BlogItemHead title="Bloq" link="/Blog" color="#63A7C6" />
             <div className={styles.blogItem}>
               <Swiper
-              loop={true}
-              slidesPerView={"auto"}
-              slidesPerGroup={1}
-              spaceBetween={30}
-             breakpoints={{
-               280:{
-                 slidesPerView:1,
-                
-               },
-              
-               550:{
-                 slidesPerView:2,
-                
-               },
-               1024:{
-                slidesPerView:3
-               }
-             }}
-             
+                loop={true}
+                slidesPerView={"auto"}
+                slidesPerGroup={1}
+                spaceBetween={30}
+                breakpoints={{
+                  280: {
+                    slidesPerView: 1,
+                  },
+
+                  550: {
+                    slidesPerView: 2,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                  },
+                }}
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
               >
@@ -360,13 +349,12 @@ export  function Home({products}) {
       </main>
     </div>
   );
-  
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     products: state.cart.products,
-  }
-}
+  };
+};
 
-export default connect (mapStateToProps)(Home);
+export default connect(mapStateToProps)(Home);

@@ -23,6 +23,7 @@ const News = () => {
                 title="Uşaqlar üçün oyuncaq dəsti"
                 view="20"
                 time="Bakı, 08-08-2021"
+                href="/BlogDetail"
               />
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
@@ -32,6 +33,7 @@ const News = () => {
                 title="Uşaqlar üçün oyuncaq dəsti"
                 view="20"
                 time="Bakı, 08-08-2021"
+                href="/BlogDetail"
               />
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
@@ -41,6 +43,7 @@ const News = () => {
                 title="Uşaqlar üçün oyuncaq dəsti"
                 view="20"
                 time="Bakı, 08-08-2021"
+                href="/BlogDetail"
               />
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
@@ -50,6 +53,7 @@ const News = () => {
                 title="Uşaqlar üçün oyuncaq dəsti"
                 view="20"
                 time="Bakı, 08-08-2021"
+                href="/BlogDetail"
               />
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
@@ -59,6 +63,7 @@ const News = () => {
                 title="Uşaqlar üçün oyuncaq dəsti"
                 view="20"
                 time="Bakı, 08-08-2021"
+                href="/BlogDetail"
               />
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
@@ -68,6 +73,7 @@ const News = () => {
                 title="Uşaqlar üçün oyuncaq dəsti"
                 view="20"
                 time="Bakı, 08-08-2021"
+                href="/BlogDetail"
               />
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
@@ -77,6 +83,7 @@ const News = () => {
                 title="Uşaqlar üçün oyuncaq dəsti"
                 view="20"
                 time="Bakı, 08-08-2021"
+                href="/BlogDetail"
               />
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
@@ -86,6 +93,7 @@ const News = () => {
                 title="Uşaqlar üçün oyuncaq dəsti"
                 view="20"
                 time="Bakı, 08-08-2021"
+                href="/BlogDetail"
               />
             </div>
           </div>

@@ -36,27 +36,27 @@ const Contact = () => {
                   <form>
                     <div className="row align-items-center">
                       <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                        <div className={styles.fullNameInp}>
+                        <div className={styles.contactInp}>
                           <input type="text" placeholder="Ad, soyad" />
                         </div>
                       </div>
                       <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                        <div className={styles.fullNameInp}>
+                        <div className={styles.contactInp}>
                           <input type="email" placeholder="E-mail" />
                         </div>
                       </div>
                       <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                      <div className={styles.fullNameInp}>
+                      <div className={styles.contactInp}>
                         <input type="email" placeholder="E-mail" />
                       </div>
                     </div>
                     <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <div className={styles.fullNameInp}>
+                    <div className={styles.contactInp}>
                      <textarea rows="10" cols="20" placeholder="Mesajınız"></textarea>
                     </div>
                   </div>
                   <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                  <div className={styles.fullNameInpS}>
+                  <div className={styles.contactInpS}>
                   <input className={styles.submitIco} type="submit" value="Göndər" />
                   </div>
                 </div>

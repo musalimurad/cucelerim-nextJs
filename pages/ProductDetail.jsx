@@ -26,16 +26,14 @@ import AdvertPerson from "../components/advertPersonContent/AdvertPerson";
 import AdvertCard from "../components/advertSection/AdvertCard";
 import diamond from "../public/assets/image/diamond1.png";
 import crystal from "../public/assets/image/jam_crown-f.png";
-import {connect} from 'react-redux'
+import { connect } from "react-redux";
 import AdvertItem from "../components/advertSection/AdvertItem";
 import { useRouter } from "next/router";
 import cardImg from "../public/assets/image/MaskGroup.png";
 
-import imgThree from '../public/assets/image/proDetail3.jpg'
+import imgThree from "../public/assets/image/proDetail3.jpg";
 
-
-
-const ProductDetail = ({products}) => {
+const ProductDetail = ({ products }) => {
   const { locale } = useRouter();
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [value, setValue] = useState(2);
@@ -89,7 +87,6 @@ const ProductDetail = ({products}) => {
                 <div className={styles.leftTop}>
                   <div className={styles.sliderDetail}>
                     <Swiper
-                      
                       spaceBetween={10}
                       slidesPerView="auto"
                       thumbs={{ swiper: thumbsSwiper }}
@@ -112,11 +109,11 @@ const ProductDetail = ({products}) => {
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                      <img
-                        className={styles.detailSliderImg}
-                        src="https://st.myideasoft.com/shop/du/83/myassets/products/849/20200120-141449.jpg?revision=1587825956"
-                      />
-                    </SwiperSlide>
+                        <img
+                          className={styles.detailSliderImg}
+                          src="https://st.myideasoft.com/shop/du/83/myassets/products/849/20200120-141449.jpg?revision=1587825956"
+                        />
+                      </SwiperSlide>
                     </Swiper>
                     <Swiper
                       style={{
@@ -126,7 +123,6 @@ const ProductDetail = ({products}) => {
                       autoplay={{
                         delay: 3000,
                       }}
-                      
                       spaceBetween={10}
                       slidesPerView={3}
                       freeMode={true}
@@ -147,11 +143,11 @@ const ProductDetail = ({products}) => {
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                      <img
-                        className={styles.detailSliderImgBottom}
-                        src="https://st.myideasoft.com/shop/du/83/myassets/products/849/20200120-141449.jpg?revision=1587825956"
-                      />
-                    </SwiperSlide>
+                        <img
+                          className={styles.detailSliderImgBottom}
+                          src="https://st.myideasoft.com/shop/du/83/myassets/products/849/20200120-141449.jpg?revision=1587825956"
+                        />
+                      </SwiperSlide>
                     </Swiper>
                   </div>
                   <div className={styles.promote}>
@@ -161,17 +157,17 @@ const ProductDetail = ({products}) => {
                         buttonBorder="1px solid #A96263"
                       />
                       <OutlineButton
-                      buttonContent="VİP et"
-                      buttonBorder="1px solid #80BC96"
-                    />
-                    <OutlineButton
-                    buttonContent="Premium et"
-                    buttonBorder="1px solid #FF8B6A"
-                  />
+                        buttonContent="VİP et"
+                        buttonBorder="1px solid #80BC96"
+                      />
+                      <OutlineButton
+                        buttonContent="Premium et"
+                        buttonBorder="1px solid #FF8B6A"
+                      />
                     </div>
                   </div>
                   <div className={styles.advertPersonAbout}>
-                   <AdvertPerson/>
+                    <AdvertPerson />
                   </div>
                 </div>
               </div>
@@ -304,41 +300,41 @@ const ProductDetail = ({products}) => {
                 </div>
               </div>
               <div className="col-12 col-sm-12">
-              <div className={styles.advertPersonAboutResponsive}>
-              <AdvertPerson/>
-             </div>
+                <div className={styles.advertPersonAboutResponsive}>
+                  <AdvertPerson />
+                </div>
               </div>
             </div>
             <div className="sameProduct">
-            <AdvertItem
-            titleText="Bənzər məhsullar"
-            textColor="#F0B74C"
-            buttonText="Daha çox"
-            cardItem={
-              
-              products
-            .filter((p) => p.locale === locale && p.isVip === true)
-            .map((fakeApi, i) => {
-              return (
-                <AdvertCard
-               
-                id={fakeApi.id}
-                 key={i}
-                  photoUrl={cardImg}
-                  title={fakeApi.productName}
-                  price={fakeApi.price}
-                  ticket={fakeApi.sellStatus}
-                  iconOne={diamond}
-                  iconTwo={crystal}
-                  date={fakeApi.dateAndCity}
-                  href="/ProductDetail"
-                  isAddWish = {false}
-                  isOffer = {false}
-                />
-              );
-            })
-          }
-          />
+              <AdvertItem
+                titleText="Bənzər məhsullar"
+                textColor="#F0B74C"
+                buttonText="Daha çox"
+                cardItem={products
+                  .filter((p) => p.locale === locale && p.isVip === true)
+                  .map((fakeApi, i) => {
+                    return (
+                      <div
+                        key={i}
+                        className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3"
+                      >
+                        <AdvertCard
+                          id={fakeApi.id}
+                          photoUrl={cardImg}
+                          title={fakeApi.productName}
+                          price={fakeApi.price}
+                          ticket={fakeApi.sellStatus}
+                          iconOne={diamond}
+                          iconTwo={crystal}
+                          date={fakeApi.dateAndCity}
+                          href="/ProductDetail"
+                          isAddWish={false}
+                          isOffer={false}
+                        />
+                      </div>
+                    );
+                  })}
+              />
             </div>
           </div>
         </section>
@@ -347,10 +343,10 @@ const ProductDetail = ({products}) => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     products: state.cart.products,
-  }
-}
+  };
+};
 
-export default connect (mapStateToProps)(ProductDetail);
+export default connect(mapStateToProps)(ProductDetail);
