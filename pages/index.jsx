@@ -205,7 +205,7 @@ export function Home({ products }) {
                     slidesPerView: 1,
                   },
 
-                  576: {
+                  768: {
                     slidesPerView: 2,
                   },
                   1024: {

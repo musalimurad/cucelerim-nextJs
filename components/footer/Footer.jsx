@@ -36,7 +36,7 @@ const Footer = () => {
                     <Link href="/UserAgreement">
                       <a>İstifadəçi razılaşması</a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/Brands">
                       <a>Brendlər</a>
                     </Link>
                     <Link href="/SiteAds">
