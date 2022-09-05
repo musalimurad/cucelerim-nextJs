@@ -5,3 +5,8 @@
         @content;
     }
 }
+@mixin responsive-min($min-width) {
+    @media screen and (min-width:$min-width) {
+        @content;
+    }
+}

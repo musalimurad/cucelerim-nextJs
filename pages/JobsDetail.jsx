@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/_jobsDetail.module.scss";
 import doctorImg from "../public/assets/image/doctor.jpg";
 import OutlineButton from "../components/button/Button";
+import Link from "next/link";
 
 const JobsDetail = () => {
   return (
@@ -49,7 +50,7 @@ const JobsDetail = () => {
                     </ul>
                   </figcaption>
                   <figcaption className={styles.onlineRegisterBtn}>
-                    <button>Onlayn qeydiyyat</button>
+                    <Link href="/consult"><a>Onlayn qeydiyyat</a></Link>
                   </figcaption>
                   <figcaption className={styles.advertButton}>
                     <OutlineButton

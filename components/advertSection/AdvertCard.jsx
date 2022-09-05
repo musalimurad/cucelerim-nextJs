@@ -109,7 +109,6 @@ const AdvertCard = ({
 AdvertCard.propTypes = {
   ticket: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  photoUrl: PropTypes.object.isRequired,
   price: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   iconOne: PropTypes.object.isRequired,

@@ -39,14 +39,14 @@
             }
         }
         .onlineRegisterBtn{
-            button{
+            a{
                 border-radius: 8px;
                 border: none;
-                padding: 10px 60px;
+                padding: 10px 60px 12px 60px;
                 background-color: $registerColor;
                 color: #fff;
                 font-weight: 600;
-               
+               text-decoration: none;
             }
         }
     }

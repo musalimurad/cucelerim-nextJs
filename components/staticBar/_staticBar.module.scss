@@ -8,8 +8,15 @@
     right: 2px;
     top: 0;
     z-index: 10;
-    @include responsive(768px){
-        display: none;
+ 
+    @include responsive(1110px){
+        top: 50%;
+    }
+   
+    .desktopStaticBar{
+        @include responsive(1110px){
+            display: none;
+        }
     }
     .top {
         background-color: $staticBarPlusBg;
@@ -17,7 +24,7 @@
 
         .plusIcon {
             .plusIco {
-                margin-left: 10px;
+                margin-left: 8px;
                 font-size: 50px !important;
                 color: #fff;
             }
@@ -34,13 +41,13 @@
                 margin-top: 30px;
                 span{
                     position: absolute;
-                    left: 30px;
-                    top: 75%;
-                    padding: 1px 6px;
-                    font-size: 12px;
-                    color: $staticBarPlusBg;
+                    left: 35px;
+                    top: 83%;
+                    padding: 0.5px 4.5px;
+                    font-size: 11px;
+                    color: #DC7E69;
                     border-radius: 100%;
-                    border: 0.5px solid $staticBarPlusBg;
+                    border: 0.5px solid #DC7E69;
                 }
                 a{
                     position: relative;
@@ -51,10 +58,11 @@
             .wishIco {
                 display: block;
                 margin-top: 20px;
-                font-size: 20px;
+                font-size: 26px;
                 margin-left: 10px;
                 color: $staticBarPlusBg;
                 transition: .5s ease;
+                cursor: pointer;
                 &:hover{
                     transform: scale(1.2);
                 }
@@ -74,5 +82,34 @@
                 }
             }
         }
+    }
+}
+.closeIco{
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.responsiveStaticBar{
+    display: none;
+    .plusIcon{
+        padding: 10px 4px;
+            background-color: #DC7E69;
+            text-align: center;
+            display: flex;
+            border-radius: 100%;
+            justify-content: center;
+        .plusIco{
+            color: #fff;
+            font-size: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-left: 1px;
+        }
+
+    }
+    @include responsive(1110px){
+        display: block;
     }
 }

@@ -7,6 +7,7 @@ import Footer from '../components/footer/Footer';
 import { Provider } from 'react-redux';
 import store from '../redux/store/store'
 import { SessionProvider } from "next-auth/react"
+import SearchModal from '../components/search/SearchModal';
 
 function App({ Component, pageProps:{session, ...pageProps} }) {
   return(

@@ -3,12 +3,115 @@
 
 .header{
   padding: 20px;
+  position: sticky;
+  background-color: #fff;
+  z-index: 10;
+ top: 0px;
+  .navIco{
+    .listIco{
+       font-size: 30px;
+       color: #DC7E69;
+       cursor: pointer;      
+    }
+  
+    @include responsive-min(1110px){
+      display: none;
+    }
+  }
  .nav{
     ul{
         margin: 0;
     }
-    @include responsive(768px){
+    @include responsive(1110px){
       display: none;
     }
  }
+ .search{
+  @include responsive-min(1110px){
+    display: none;
+   
+  }
+  .searchIco{
+     cursor: pointer;
+  }
+ }
+  .responsiveNav{
+    background-color: #fff;
+    position: sticky;
+    padding: 20px;
+    z-index: 10;
+    transition: .5s ease;
+
+    @include responsive-min(1110px){
+      display: none !important;
+     
+    }
+    &.activeNav{
+      display: block;
+      transform: translateY(-50px);
+      transition: .5s ease;
+    }
+    transform: translateY(0px);
+    display: none;
+  .navHead{
+    .left{
+      .closeIco{
+        color: #DC7E69;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .right{
+      .wishList{
+        a{
+          text-decoration: none;
+          position: relative;
+          .wishListIco{
+
+          }
+          .wishCount{
+             color: #DC7E69;
+             position: absolute;
+             top: -30px;
+             right: -7px;
+             z-index: 3;
+             span{
+             padding: 1.5px 5.5px;
+             border: 1px solid #DC7E69;
+             border-radius: 100%;
+             text-align: center;
+              font-size: 11px;
+             }
+          }
+        }
+      }
+    }
+  }
+  .navContent{
+    ul{
+      padding: 0;
+      li{
+        padding: 10px;
+        a{
+          text-decoration: none;
+          color: #000;
+          font-weight: 600;
+        }
+      }
+    }
+    .social{
+      a{
+        margin-right: 20px;
+      }
+
+    }
+  }
+  }
+}
+
+.closeIco{
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
 }

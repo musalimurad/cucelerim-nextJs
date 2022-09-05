@@ -11,22 +11,24 @@ const Footer = () => {
       <div className="myContainer">
         <div className="d-flex flex-wrap  align-items-center">
           <div className=" col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-           <div className="d-flex align-items-center">
-           <div className={styles.logo}>
-              <Image src={Logo} className={styles.logoImg} />
+            <div className="d-flex align-items-center">
+              <div className={styles.logo}>
+                <Image src={Logo} className={styles.logoImg} />
+              </div>
+              <div className={styles.lang}>
+                <ul className={styles.lang}>
+                  {locales.map((l, i) => {
+                    return (
+                      <li key={i}>
+                        <Link href={asPath} locale={l}>
+                          <a> {l}</a>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
-            <div className={styles.lang}>
-              {locales.map((l, i) => {
-                return (
-                  <span key={i}>
-                    <Link href={asPath} locale={l}>
-                      {l}
-                    </Link>
-                  </span>
-                );
-              })}
-            </div>
-           </div>
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
             <div className={styles.middle}>

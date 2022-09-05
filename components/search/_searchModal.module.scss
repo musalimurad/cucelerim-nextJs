@@ -1,0 +1,65 @@
+@import '../../styles/globals.scss';
+
+
+.searchModal {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+    background-color: #fff;
+   .closeContent{
+    display: flex;
+    justify-content: end;
+   
+   }
+    .searchForm {
+        z-index: 100;
+        margin-left: 30px;
+        @include responsive-min(992px){
+            margin-left: 130px;
+        }
+        form {
+            position: relative;
+            margin: auto;
+            z-index: 20;
+            padding-top: 40px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 12px;
+                width: 77%;
+                height: 1px;
+                margin-top: 5px;
+                background-color: #fff;
+                margin-bottom: 40px;
+            }
+
+            input {
+                background-color: transparent;
+                outline: none;
+                width: 100%;
+                color: #fff;
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+
+            .searchBtn {
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.526);
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+}

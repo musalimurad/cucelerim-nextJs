@@ -9,6 +9,17 @@
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
+            padding-top: 20px;
+        }
+    }
+    .lang{
+        display: flex;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #000;
+            margin-right: 0px;
+            margin-left: 30px;
         }
     }
 
