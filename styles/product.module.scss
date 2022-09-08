@@ -4,6 +4,12 @@
     width: 90%;
     margin: auto;
 }
+.headTextProduct{
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
 .categoryListProduct{
     position: sticky;
     top: 180px;
@@ -13,18 +19,5 @@
 }
 .productMain{
     position: relative;
-   
-    .productContent{
-        // margin-left: 120px;
-        .headTitle{
-            .filterBtn{
-                border: none;
-                outline: none;
-                padding: 12px 20px;
-                background: #FAFAFA;
-                font-weight: 600;
-                border-radius: 8px;
-            }
-        }
-    }
 }
+

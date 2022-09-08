@@ -1,0 +1,44 @@
+@import '../../styles/globals.scss';
+
+.search {
+    margin-top: 50px;
+
+    form {
+        .searchInp {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background: #FFFFFF;
+            /* Shadow */
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.08);
+            .searchIco {
+                color: #979797;
+            }
+
+            input {
+                outline: none;
+                margin-left: 10px;
+                width: 100%;
+                &::placeholder{
+                    color: #979797;
+                    font-size: 15px;
+                }
+            }
+        }
+        .submitBtn{
+            margin-left: 20px;
+            @include responsive(576px){
+                margin-top: 20px;
+                margin-left: 0;
+            }
+           input{
+            background-color: #ECA621; 
+            color: #fff;
+            padding: 12px 20px;
+            width: 100%;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 1px 1px 10px rgba(118, 48, 35, 0.1);
+           }
+        }
+    }
+}

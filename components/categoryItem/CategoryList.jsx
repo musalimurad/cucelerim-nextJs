@@ -15,15 +15,13 @@ const CategoryList = () => {
     let liItemsContent = document.querySelectorAll(
       "._categoryList_catListItem__gDtyh ul li ul"
     );
-    console.log(liItemsContent);
     let arrowIcons = document.querySelectorAll("._categoryList_arrow__wNLjD");
-    console.log(arrowIcons);
-    for (let i = 0; i < liItems.length - 1; i++) {
+    for (let i = 0; i < liItems.length ; i++) {
       liItems[i].onclick = (e) => {
         e.preventDefault();
         setActive(true);
         liItems[i].classList.toggle(`${styles.active}`);
-        liItemsContent[i].classList.toggle(`${styles.activeMenu}`);
+        liItems[i].nextElementSibling.classList.toggle(`${styles.activeMenu}`);
       };
     }
   });

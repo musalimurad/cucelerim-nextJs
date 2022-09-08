@@ -9,6 +9,7 @@ import Filter from "../components/filter/Filter";
 import * as Icon from "react-bootstrap-icons";
 import { connect } from "react-redux";
 import { useRouter } from "next/router";
+import AllFilter from "../components/filter/AllFilter";
 const Offer = ({ products }) => {
   const { locale } = useRouter();
   return (
@@ -25,11 +26,9 @@ const Offer = ({ products }) => {
             <div className={styles.headTitle}>
               <div className=" d-flex justify-content-between align-items-center">
                 <h1>Təkliflər</h1>
-                <button className={styles.filterBtn}>
-                  Ətraflı axtarış <Icon.Filter />{" "}
-                </button>
+              
               </div>
-              <Filter />
+             <AllFilter/>
             </div>
             <div className="productList">
               <div className="row align-items-center">

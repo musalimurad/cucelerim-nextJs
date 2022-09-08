@@ -33,7 +33,7 @@ export function Home({ products }) {
 
       <main>
         <section className={styles.categorySection}>
-          <div className="container">
+          <div className="myContainer">
             <div className="row align-items-center">
               <div className={styles.categoryList}>
                 <div className="row align-items-center">
@@ -105,7 +105,7 @@ export function Home({ products }) {
           </div>
         </section>
         <section className={styles.advertSection}>
-          <div className="container">
+          <div className="myContainer">
             <AdvertItem
               titleText="VİP elanlar"
               textColor="#5EB57E"
@@ -192,7 +192,7 @@ export function Home({ products }) {
           </div>
         </section>
         <section className={styles.blog}>
-          <div className="container">
+          <div className="myContainer">
             <BlogItemHead link="/News" title="Xəbərlər" color="#A96263" />
             <div className={styles.blogItem}>
               <Swiper
@@ -205,7 +205,7 @@ export function Home({ products }) {
                     slidesPerView: 1,
                   },
 
-                  768: {
+                  640: {
                     slidesPerView: 2,
                   },
                   1024: {
@@ -282,7 +282,7 @@ export function Home({ products }) {
                     slidesPerView: 1,
                   },
 
-                  550: {
+                  640: {
                     slidesPerView: 2,
                   },
                   1024: {

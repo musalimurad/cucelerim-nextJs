@@ -5,8 +5,8 @@ import styles from "../styles/product.module.scss";
 import cardImg from "../public/assets/image/MaskGroup.png";
 import diamond from "../public/assets/image/diamond1.png";
 import crystal from "../public/assets/image/jam_crown-f.png";
-import Filter from "../components/filter/Filter";
 import * as Icon from "react-bootstrap-icons";
+import AllFilter from "../components/filter/AllFilter";
 
 const Product = () => {
   return (
@@ -27,12 +27,10 @@ const Product = () => {
             </div>
             <div className=" col-xl-10 col-xxl-10">
               <div className={styles.allProductList}>
-                <div className="headTextProduct">
+                <div className={styles.headTextProduct}>
                   <h1>Oyuncaqlar</h1>
                 </div>
-                <div className="filterList">
-                  <Filter />
-                </div>
+                <AllFilter />
                 <div className="productsItems">
                   <div className="row align-items-center">
                     <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">

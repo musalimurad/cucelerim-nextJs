@@ -16,8 +16,12 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin-bottom: 30px;
   border-radius: 14px;
-}
 
+}
+.detailtext{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .sliderText{
     padding: 20px;
     padding-top: 8px;
@@ -26,7 +30,6 @@
     border-bottom-left-radius: 14px !important;
     border-bottom-right-radius: 14px !important;
     p{
-        margin-top: 5px;
         color: rgb(148, 146, 146);
         font-size: 14px;
         padding-top: 3px;

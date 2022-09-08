@@ -95,7 +95,7 @@ const AdvertCard = ({
             <div className="d-flex align-items-center justify-content-between">
               <p>{date}</p>
               <div className={styles.altIcon}>
-                <Image src={iconOne} />
+                <Image  src={iconOne} />
                 <Image src={iconTwo} />
               </div>
             </div>

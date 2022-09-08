@@ -5,11 +5,15 @@
     margin-top: 60px;
 
     .advertHead {
-        h2{
-            @include responsive(576px){
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+
+            @include responsive(576px) {
                 font-size: 17px;
             }
         }
+
         .moreBtn {
             a {
                 text-decoration: none;
@@ -22,7 +26,8 @@
                     border-bottom-left-radius: 12px;
                     border-bottom-right-radius: 12px;
                 }
-                @include responsive(576px){
+
+                @include responsive(576px) {
                     padding: 4px 12px;
                     font-size: 14px;
                 }
@@ -34,7 +39,7 @@
 .advertCard {
     margin-top: 40px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-   border-radius: 16px !important;
+    border-radius: 16px !important;
 
     // margin-left: 10px;
     // height: 360px;
@@ -45,7 +50,7 @@
         border-top-right-radius: 16px !important;
 
         .img {
-            
+
             transition: .5s ease;
 
             &:hover {
@@ -64,20 +69,17 @@
             .top {
                 position: absolute;
                 top: 10px;
-                left: 10px;
                 width: 100%;
 
                 .icon {
                     .wishDiv {
                         background-color: #fff;
-                        padding: 10px 12px;
+                        padding: 8px 10px;
                         border-radius: 100%;
-                        transition: .5s ease;
+                        transition: 0.5s ease;
 
                         @include responsive(576px) {
                             padding: 7px 8px;
-                            margin-left: -16px;
-                            margin-bottom: 7px;
                         }
 
                         &:hover {
@@ -88,7 +90,7 @@
                         .wishIco {
                             margin-top: 3px;
                             color: $borderColor;
-                            font-size: 22px;
+                            font-size: 18px;
 
                             @include responsive(576px) {
                                 font-size: 18px;
@@ -98,12 +100,8 @@
                 }
 
                 .imgText {
-                    margin-right: 20px;
-                    margin-top: 7px;
 
-                    @include responsive(576px) {
-                        margin-right: 6px;
-                    }
+                    @include responsive(576px) {}
 
                     p {
                         padding: 3px 15px;
@@ -123,14 +121,15 @@
 
             .bottom {
                 position: absolute;
-                bottom: -15px;
+                bottom: 0px;
                 right: 0px;
 
                 p {
-                    padding: 5px 15px;
+                    padding: 0px 15px;
                     background-color: $borderColor;
                     color: #fff;
-                    font-weight: 600;
+                    font-size: 15px;
+                    font-weight: 500;
 
                     @include responsive(576px) {
                         padding: 0px 10px;
@@ -149,7 +148,8 @@
             color: #000;
 
             h4 {
-                font-size: 18px;
+                font-size: 14px;
+                font-weight: 600;
 
                 @include responsive(576px) {
                     font-size: 11px;
@@ -158,12 +158,11 @@
         }
 
         .altText {
-            margin-top: 25px;
+            margin-top: 10px;
 
             p {
                 color: rgb(175, 173, 173);
-                margin-top: 10px;
-
+                font-size: 13px;
                 @include responsive(576px) {
                     font-size: 11px;
                 }

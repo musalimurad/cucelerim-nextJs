@@ -1,13 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.scss'
 import '../styles/globals.css'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/header/Header';
 import StaticBar from '../components/staticBar/StaticBar';
 import Footer from '../components/footer/Footer';
 import { Provider } from 'react-redux';
 import store from '../redux/store/store'
 import { SessionProvider } from "next-auth/react"
-import SearchModal from '../components/search/SearchModal';
 
 function App({ Component, pageProps:{session, ...pageProps} }) {
   return(

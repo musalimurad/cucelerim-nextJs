@@ -9,7 +9,7 @@ const AdvertItem = ({ titleText, textColor, buttonText, cardItem }) => {
   return (
     <div className={styles.advertItem}>
       <div className={styles.advertHead}>
-        <div className="container d-flex align-items-center justify-content-between">
+        <div className=" d-flex align-items-center justify-content-between">
           <div className={styles.title}>
             <h2 style={{ color: `${textColor}` }}>{titleText}</h2>
           </div>
