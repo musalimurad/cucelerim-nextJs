@@ -10,8 +10,7 @@ import { FormControlLabel, FormGroup } from "@mui/material";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const register = () => {
-  const { data: session } = useSession();
-  const [isVerified, setisVerified] = useState(false);
+
 
   const handleSubscribe = () => {
     if (isVerified) {
