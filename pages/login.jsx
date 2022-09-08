@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/login.module.scss";
 import Recaptcha from "react-recaptcha";
-import { useState } from "react";
+import * as React from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import * as Icon from "react-bootstrap-icons";
 import Checkbox from "@mui/material/Checkbox";
@@ -10,8 +10,7 @@ import { FormControlLabel, FormGroup } from "@mui/material";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const login = () => {
-  const { data: session } = useSession();
-  const [isVerified, setisVerified] = useState(false);
+ 
 
   const handleSubscribe = () => {
     if (isVerified) {
