@@ -3,6 +3,7 @@ import { Button } from "../button/Button";
 import Search from "../search/Search";
 import Filter from "./Filter";
 import styles from "./_filter.module.scss";
+import $ from "jquery";
 
 const AllFilter = () => {
   useEffect(() => {
@@ -10,8 +11,8 @@ const AllFilter = () => {
     let filterBtn = filterBtnBox.firstChild
 
     filterBtn.onclick = () => {
-        let filterContent = document.querySelector(`.${styles.allFilterContent}`);
-        filterContent.classList.toggle(`${styles.activeFilterList}`)
+        
+       $(`.${styles.allFilterContent}`).stop().slideToggle()
     };
   });
 

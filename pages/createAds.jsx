@@ -1,12 +1,32 @@
+import { useEffect, useState } from "react";
+
 import Head from "next/head";
 import styles from "../styles/_createAds.module.scss";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import ListSubheader from "@mui/material/ListSubheader";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+import * as Icon from "react-icons/bs";
+import $ from "jquery";
+import Image from "next/image";
+import catImg from "../public/assets/image/catImg.png";
+import Link from "next/link";
 
-const AboutUs = () => {
+const createAds = () => {
+  const [activeField, setActiveField] = useState(false);
+  useEffect(() => {
+    let fieldBox = document.querySelectorAll(`.${styles.fieldName}`);
+    let catImg = document.querySelectorAll(`.${styles.categoryBox}`)
+    console.log(catImg);
+    for (let i = 0; i < fieldBox.length; i++) {
+      fieldBox[i].onclick = () => {
+        setActiveField(activeField ? false : true);
+        $(`.${styles.fieldBoxContent}`).stop().slideToggle();
+      };
+    }
+    for (let j = 0; j < catImg.length; j++) {
+     catImg[j].onclick = () => {
+      catImg[j].classList.toggle(`${styles.activeCat}`)
+     }
+     
+    }
+  });
   return (
     <div>
       <Head>
@@ -22,37 +42,109 @@ const AboutUs = () => {
             </div>
             <form className={styles.formAds}>
               <div className="row">
-              <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-              <div className={styles.mainContent}>
-                  <div className={styles.mainContentHead}>
+                <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                  <div className={styles.formHead}>
                     <h5>Əsas məlumatlar</h5>
-                    <div>
-                      <FormControl className={styles.categoryList} sx={{ m: 1, minWidth: 220 }}>
-                        <InputLabel htmlFor="grouped-native-select">
-                        Kateqoriyanı seçin
-                        </InputLabel>
-                        <Select
-                          native
-                          defaultValue=""
-                          id="grouped-native-select"
-                          label="Kateqoriyanı seçin"
-                        >
-                          
-                          <optgroup label="Category 1">
-                            <option value={1}>Option 1</option>
-                            <option value={2}>Option 2</option>
-                          </optgroup>
-                          <optgroup label="Category 2">
-                            <option value={3}>Option 3</option>
-                            <option value={4}>Option 4</option>
-                          </optgroup>
-                        </Select>
-                      </FormControl>
-                   
+                  </div>
+                  <label htmlFor="">Kateqoriyanı seçin</label>
+                  <div className={styles.fieldBox}>
+                    <div className={styles.fieldName}>
+                      <div className="d-flex align-items-center justify-content-between">
+                        <span>Siyahıdan seçin</span>
+                        {activeField ? (
+                          <Icon.BsChevronUp />
+                        ) : (
+                          <Icon.BsChevronDown />
+                        )}
+                      </div>
+                    </div>
+                    <div className={styles.fieldBoxContent}>
+                      <div className="row">
+                        <div className="col-4 col-sm-3  col-md-3 col-lg-4 col-xl-4 col-xxl-3">
+                          <div className={styles.categoryBox}>
+                            <input type="text" hidden value={"87"} />
+                            <figure>
+                              <Image className={styles.catImg} width={80} height={80} src={catImg} />
+                              <figcaption>
+                                <h6>Oyuncaq</h6>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div className="col-4 col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-3">
+                          <div className={styles.categoryBox}>
+                            <figure>
+                              <Image width={80} height={80} src={catImg} />
+                              <figcaption>
+                                <h6>Oyuncaq</h6>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div className="col-4 col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-3">
+                          <div className={styles.categoryBox}>
+                            <figure>
+                              <Image width={80} height={80} src={catImg} />
+                              <figcaption>
+                                <h6>Oyuncaq</h6>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div className="col-4 col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-3">
+                          <div className={styles.categoryBox}>
+                            <figure>
+                              <Image width={80} height={80} src={catImg} />
+                              <figcaption>
+                                <h6>Oyuncaq</h6>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div className="col-4 col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-3">
+                          <div className={styles.categoryBox}>
+                            <figure>
+                              <Image width={80} height={80} src={catImg} />
+                              <figcaption>
+                                <h6>Oyuncaq</h6>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div className="col-4 col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-3">
+                          <div className={styles.categoryBox}>
+                            <figure>
+                              <Image width={80} height={80} src={catImg} />
+                              <figcaption>
+                                <h6>Oyuncaq</h6>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div className="col-4 col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-3">
+                          <div className={styles.categoryBox}>
+                            <figure>
+                              <Image width={80} height={80} src={catImg} />
+                              <figcaption>
+                                <h6>Oyuncaq</h6>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div className="col-4 col-sm-3 col-md-3 col-lg-4 col-xl-4 col-xxl-3">
+                          <div className={styles.categoryBox}>
+                            <figure>
+                              <Image width={80} height={80} src={catImg} />
+                              <figcaption>
+                                <h6>Oyuncaq</h6>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </div>
             </form>
           </div>
@@ -62,4 +154,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default createAds;

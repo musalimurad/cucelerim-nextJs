@@ -2,6 +2,7 @@
 
 .blogDetail{
     margin-top: 30px;
+    
     .blogDetailView{
         margin-top: 10px;
         figcaption{
@@ -19,9 +20,17 @@
         }
     }
     .otherBlog{
+       
         .otherBlogHead{
+            margin-top: 20px;
+            margin-bottom: 20px;
+          
             h3{
                 color: $scrollColor;
+                font-size: 35px;
+                @include responsive(576px){
+                    font-size: 20px;
+                }
             }
         }
         .otherBlogContent{
@@ -31,8 +40,12 @@
             padding: 10px 10px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
         }
+        a{
+            color: #000;
+          }
         
         .otherBlogContentText{
+            
             h5{
                 margin-left: 30px;
             }

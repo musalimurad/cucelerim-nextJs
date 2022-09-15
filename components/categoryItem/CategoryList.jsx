@@ -6,6 +6,7 @@ import rightArrow from "../../public/assets/image/eva_arrow-right.png";
 import { useState } from "react";
 import Image from "next/image";
 import { useEffect } from "react";
+
 const CategoryList = () => {
   const [isActive, setActive] = useState(false);
   useEffect(() => {

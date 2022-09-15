@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import store from '../redux/store/store'
 import { SessionProvider } from "next-auth/react"
 
+
 function App({ Component, pageProps:{session, ...pageProps} }) {
   return(
     <div>

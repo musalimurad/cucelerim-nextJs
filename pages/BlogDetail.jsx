@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import blogImg from "../public/assets/image/blog.png";
 import * as Icon from "react-bootstrap-icons";
+import Link from "next/link";
 
 const BlogDetail = () => {
   return (
@@ -69,7 +70,7 @@ const BlogDetail = () => {
                         <Image width={110} height={110} src={blogImg} />
                       </div>
                       <div className={styles.otherBlogContentText}>
-                        <h5>Uşaqlar üçün oyuncaq dəsti</h5>
+                      <Link href="/BlogDetail"><a>  <h5>Uşaqlar üçün oyuncaq dəsti</h5></a></Link>
                         <div className={styles.otherBlogContentDate}>
                           <div className="d-flex justify-content-between align-items-center">
                             <p>08-08-2021 09:15</p>
@@ -87,7 +88,7 @@ const BlogDetail = () => {
                         <Image width={110} height={110} src={blogImg} />
                       </div>
                       <div className={styles.otherBlogContentText}>
-                        <h5>Uşaqlar üçün oyuncaq dəsti</h5>
+                      <Link href="/BlogDetail"><a>  <h5>Uşaqlar üçün oyuncaq dəsti</h5></a></Link>
                         <div className={styles.otherBlogContentDate}>
                           <div className="d-flex justify-content-between align-items-center">
                             <p>08-08-2021 09:15</p>
@@ -100,41 +101,41 @@ const BlogDetail = () => {
                     </div>
                   </div>
                   <div className={styles.otherBlogContent}>
-                    <div className="d-flex align-items-center">
-                      <div className="leftImg">
-                        <Image width={110} height={110} src={blogImg} />
-                      </div>
-                      <div className={styles.otherBlogContentText}>
-                        <h5>Uşaqlar üçün oyuncaq dəsti</h5>
-                        <div className={styles.otherBlogContentDate}>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <p>08-08-2021 09:15</p>
-                            <p className="d-flex align-items-center">
-                              <Icon.Eye className={styles.eye} /> 20
-                            </p>
-                          </div>
+                  <div className="d-flex align-items-center">
+                    <div className="leftImg">
+                      <Image width={110} height={110} src={blogImg} />
+                    </div>
+                    <div className={styles.otherBlogContentText}>
+                    <Link href="/BlogDetail"><a>  <h5>Uşaqlar üçün oyuncaq dəsti</h5></a></Link>
+                      <div className={styles.otherBlogContentDate}>
+                        <div className="d-flex justify-content-between align-items-center">
+                          <p>08-08-2021 09:15</p>
+                          <p className="d-flex align-items-center">
+                            <Icon.Eye className={styles.eye} /> 20
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className={styles.otherBlogContent}>
-                    <div className="d-flex align-items-center">
-                      <div className="leftImg">
-                        <Image width={110} height={110} src={blogImg} />
-                      </div>
-                      <div className={styles.otherBlogContentText}>
-                        <h5>Uşaqlar üçün oyuncaq dəsti</h5>
-                        <div className={styles.otherBlogContentDate}>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <p>08-08-2021 09:15</p>
-                            <p className="d-flex align-items-center">
-                              <Icon.Eye className={styles.eye} /> 20
-                            </p>
-                          </div>
-                        </div>
+                </div>
+                <div className={styles.otherBlogContent}>
+                <div className="d-flex align-items-center">
+                  <div className="leftImg">
+                    <Image width={110} height={110} src={blogImg} />
+                  </div>
+                  <div className={styles.otherBlogContentText}>
+                  <Link href="/BlogDetail"><a>  <h5>Uşaqlar üçün oyuncaq dəsti</h5></a></Link>
+                    <div className={styles.otherBlogContentDate}>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <p>08-08-2021 09:15</p>
+                        <p className="d-flex align-items-center">
+                          <Icon.Eye className={styles.eye} /> 20
+                        </p>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import BlogItemDetail from "../components/blog&news/BlogItemDetail";
 import cardImg from "../public/assets/image/MaskGroup.png";
+import styles from '../styles/_news_blog.module.scss'
 
 const News = () => {
   return (
@@ -11,12 +12,12 @@ const News = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="container">
-          <div>
+        <div className="myContainer">
+          <div className={styles.headText}>
             <h1>Xəbərlər</h1>
           </div>
           <div className="row align-items-center">
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
               <BlogItemDetail
                 img={cardImg}
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim posuere ac egestas ac ..."
@@ -26,7 +27,7 @@ const News = () => {
                 href="/BlogDetail"
               />
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
               <BlogItemDetail
                 img={cardImg}
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim posuere ac egestas ac ..."
@@ -36,7 +37,7 @@ const News = () => {
                 href="/BlogDetail"
               />
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
               <BlogItemDetail
                 img={cardImg}
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim posuere ac egestas ac ..."
@@ -46,7 +47,7 @@ const News = () => {
                 href="/BlogDetail"
               />
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
               <BlogItemDetail
                 img={cardImg}
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim posuere ac egestas ac ..."
@@ -56,7 +57,7 @@ const News = () => {
                 href="/BlogDetail"
               />
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
               <BlogItemDetail
                 img={cardImg}
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim posuere ac egestas ac ..."
@@ -66,7 +67,7 @@ const News = () => {
                 href="/BlogDetail"
               />
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
               <BlogItemDetail
                 img={cardImg}
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim posuere ac egestas ac ..."
@@ -76,7 +77,7 @@ const News = () => {
                 href="/BlogDetail"
               />
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
               <BlogItemDetail
                 img={cardImg}
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim posuere ac egestas ac ..."
@@ -86,7 +87,7 @@ const News = () => {
                 href="/BlogDetail"
               />
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
               <BlogItemDetail
                 img={cardImg}
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim posuere ac egestas ac ..."

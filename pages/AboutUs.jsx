@@ -1,6 +1,7 @@
 import Head from "next/head";
-import SiteText from "../components/siteText/SiteText";
-
+import styles from "../styles/_about.module.scss";
+import Image from "next/image";
+import aboutImgOne from "../public/assets/image/Rectangle.png";
 const AboutUs = () => {
   return (
     <div>
@@ -10,17 +11,82 @@ const AboutUs = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <SiteText
-          title="Haqqımızda"
-          description="Tap.az layihəsi Azərbaycanda özəl elanlar üçün universal meydança təşkil etmək məqsədi ilə yaradılıb.
-
-      Hər bir kəs saytdan istifadə etməklə geyim və mebeldən tutmuş elektronika və avtomobilədək hər şey ala və sata bilər.
-      
-      Tap.az-a əsasən ayrıca fərdlər elan yerləşdirir, lakin sayt şirkət və fərdi sahibkarlar üçün də maraq kəsb edir, buna görə Tap.az-da təkcə işlənmiş deyil, eləcə də yeni məhsullar əldə etmək olar."
-          color="#F3FFF8"
-          height="500px"
-          borderColor="#80BC96"
-        />
+        <section className={styles.aboutContent}>
+          <div className="container">
+            <div className={styles.about}>
+              <div className="row justify-content-center align-items-center g-2">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                  <div className={styles.headText}>
+                    <h1>Haqqımızda</h1>
+                  </div>
+                  <div className={styles.aboutText}>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur. Magni dolores eos
+                      qui ratione voluptatem sequi nesciunt. Neque porro
+                      quisquam est, qui dolorem ipsum quia dolor sit amet,
+                      consectetur, adipisci velit, sed quia non numquam eius
+                      modi tempora incidunt ut labore et dolore magnam aliquam
+                      quaerat voluptatem. Ut enim ad minima veniam.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                  <div className={styles.aboutImgBox}>
+                    <Image
+                      objectFit="cover"
+                      height={500}
+                      width={500}
+                      src={aboutImgOne}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.about}>
+              <div className="row justify-content-center align-items-center g-2">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                  <div className={styles.aboutText}>
+                    <div className={styles.aboutImgBox}>
+                      <Image
+                        objectFit="cover"
+                        height={500}
+                        width={500}
+                        src={aboutImgOne}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div className={styles.aboutText}>
+                <ul>
+                <li>
+                  <strong>Ad və Soyad</strong>
+                  <p>Admin admin</p>
+                </li>
+                <li>
+                  <strong>Ad və Soyad</strong>
+                  <p>Admin admin</p>
+                </li>
+                <li>
+                  <strong>Ad və Soyad</strong>
+                  <p>Admin admin</p>
+                </li>
+                <li>
+                  <strong>Ad və Soyad</strong>
+                  <p>Admin admin</p>
+                </li>
+              </ul>  
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

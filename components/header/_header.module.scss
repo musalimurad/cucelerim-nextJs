@@ -1,6 +1,5 @@
 @import '../../styles/globals.scss';
 
-
 .header{
   padding: 20px;
   position: sticky;
@@ -8,8 +7,11 @@
   z-index: 10;
  top: 0px;
  width: 100%;
+ font-family: 'Mali', cursive;
+
   .navIco{
     .listIco{
+      font-family: 'Mali', cursive;
        font-size: 30px;
        color: #DC7E69;
        cursor: pointer;      

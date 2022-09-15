@@ -1,74 +1,94 @@
 @import './globals.scss';
 
 
-.jobsDetail{
+.jobsDetail {
     margin-top: 40px;
-    .detailContact{
-        .personImg{
+
+    .detailContact {
+        .personImg {
             border-radius: 8px;
         }
-        .fullName{
+
+        .fullName {
             margin-top: 10px;
-            h2{
-                @include responsive(320px){
+
+            h2 {
+                @include responsive(320px) {
                     font-size: 20px;
                 }
             }
-          
-            p{
+
+            p {
                 font-weight: 600;
                 font-size: 22px;
-                @include responsive(320px){
+
+                @include responsive(320px) {
                     font-size: 17px;
                 }
             }
         }
-        .contactInfo{
-            ul{
+
+        .contactInfo {
+            ul {
                 padding-left: 0;
-                li{
+
+                li {
                     padding: 10px 0;
-                    span{
+
+                    span {
                         margin-right: 10px;
                         font-weight: 600;
                     }
-                    @include responsive(320px){
+
+                    @include responsive(320px) {
                         font-size: 13px;
                     }
                 }
             }
         }
-        .onlineRegisterBtn{
-            a{
+
+        .onlineRegisterBtn {
+            a {
                 border-radius: 8px;
                 border: none;
                 padding: 10px 60px 12px 60px;
                 background-color: $registerColor;
                 color: #fff;
                 font-weight: 600;
-               text-decoration: none;
+                text-decoration: none;
             }
         }
     }
-    .jobsContent{
+
+    .jobsContent {
         margin-bottom: 20px;
-        .headText{
+
+        @include responsive(992px) {
+            margin-top: 20px;
+
+        }
+
+        .headText {
             padding: 20px 30px;
             background-color: $jobsHeadColor;
             border-radius: 8px;
             color: #fff;
         }
-        .jobsText{
+
+        .jobsText {
             margin-top: 10px;
-            ul{
+
+            ul {
                 list-style: disc;
-               li{
-                &::marker{
-                    color: $jobsHeadColor;
+
+                li {
+                    &::marker {
+                        color: $jobsHeadColor;
+                    }
+
+                    padding-bottom: 10px;
+                    word-break: break-all;
                 }
-                padding-bottom: 10px;
-                word-break: break-all;
-               }
             }
         }
     }

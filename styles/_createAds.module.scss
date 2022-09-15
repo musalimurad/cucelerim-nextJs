@@ -2,11 +2,70 @@
 
 
 .createAdsPage{
-    .formAds{
-        .mainContent{
-            .categoryList{
-               
-            }
+    height: 600px;
+    font-family: 'Mali';
+
+   .adsHead{
+    margin-top: 40px ;
+    margin-bottom: 40px;
+    h2{
+        font-size: 40px ;
+        font-weight: 600;
+        @include responsive (768px){
+            font-size: 25px;
         }
     }
+   }
+   .formAds{
+    .formHead{
+        h5{
+            color: #F0B74C;
+            font-weight: 500;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    label{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    .fieldBox{
+        position: relative;
+        .fieldName{
+            padding: 10px 10px;
+            width: 100%;
+            border: 1px solid #D4D4D4;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .fieldBoxContent{
+            margin-top: 10px;
+            background-color: #fff;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            padding: 40px 20px;
+            display: none;
+            position: absolute;
+            width: 100%;
+            z-index: 5;
+            .categoryBox{
+                cursor: pointer;
+                margin-bottom: 10px;
+               &.activeCat{
+                filter: brightness(0.5);
+               }
+                figure{
+                    figcaption{
+                        h6{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+   }
 }

@@ -1,13 +1,15 @@
 @import '../../styles/globals.scss';
-
 .li {
     margin-right: 15px;
     list-style: none;
     position: relative;
+    font-family: 'Mali', cursive;
 
     a {
         text-decoration: none;
         color: $defaultTextColor;
+        font-family: 'Mali', cursive;
+
     }
 
     &:hover {

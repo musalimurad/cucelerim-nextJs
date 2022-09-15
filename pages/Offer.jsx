@@ -1,12 +1,9 @@
 import Head from "next/head";
 import AdvertCard from "../components/advertSection/AdvertCard";
-import CategoryList from "../components/categoryItem/CategoryList";
-import styles from "../styles/product.module.scss";
+import styles from "../styles/_offer.module.scss";
 import cardImg from "../public/assets/image/MaskGroup.png";
 import diamond from "../public/assets/image/diamond1.png";
 import crystal from "../public/assets/image/jam_crown-f.png";
-import Filter from "../components/filter/Filter";
-import * as Icon from "react-bootstrap-icons";
 import { connect } from "react-redux";
 import { useRouter } from "next/router";
 import AllFilter from "../components/filter/AllFilter";
@@ -21,7 +18,7 @@ const Offer = ({ products }) => {
       </Head>
 
       <main className={styles.productMain}>
-        <div className="container">
+        <div className="myContainer">
           <div className={styles.productContent}>
             <div className={styles.headTitle}>
               <div className=" d-flex justify-content-between align-items-center">

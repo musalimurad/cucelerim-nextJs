@@ -6,8 +6,19 @@
     padding-top: 100px;
     a{
         text-decoration: none !important;
-        padding: 6px 20px;
+        padding: 8px 24px 12px 24px;
         border-radius: 10px;
+        font-weight: 500;
+        letter-spacing: 1.1px;
+        @include responsive(576px){
+          font-size: 14px !important;
+        }
+        
+    }
+    h1{
+      @include responsive(576px){
+        font-size: 22px !important;
+      }
     }
 }
 
@@ -25,7 +36,7 @@
 .sliderText{
     padding: 20px;
     padding-top: 8px;
-    margin-top: -5px;
+    margin-top: 0px;
     background-color: #fff;
     border-bottom-left-radius: 14px !important;
     border-bottom-right-radius: 14px !important;
@@ -34,6 +45,7 @@
         font-size: 14px;
         padding-top: 3px;
         word-break: break-all;
+        font-family: 'Mali', cursive;
     }
     .eye{
         font-size: 18px;
@@ -45,6 +57,16 @@
     a{
         color: $borderColor !important;
         text-decoration: none;
+    }
+    h6{
+      font-weight: 600;
+      font-family: 'Mali', cursive;
+      @include responsive(680px){
+        font-size: 12px;
+      }
+      @include responsive(320px){
+        font-size: 12px;
+      }
     }
     .rightArrow{
       margin-left: 10px;
